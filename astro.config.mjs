@@ -11,5 +11,6 @@ import netlify from '@astrojs/netlify';
 export default defineConfig({
   integrations: [react(), mdx()],
   output: 'static',
-  adapter: netlify()
+  adapter: netlify(),
+  site: 'https://evamerve.netlify.app'
 });
