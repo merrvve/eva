@@ -1,7 +1,7 @@
 import { useStore } from "@nanostores/react";
 import { AnimatePresence, motion } from "framer-motion";
 import { nanoid } from "nanoid";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 import { clearSams, numSams } from "../../stores/sam";
 import { Sticker, type StickerProps } from "./Sticker";
@@ -11,28 +11,29 @@ export const Stickers = () => {
   const [showShoo, setShowShoo] = useState(false);
   const $numSams = useStore(numSams);
 
-  const addSticker = () => {
-    const getNewSticker = () => {
-      return {
-        id: nanoid(),
-        variant: $numSams,
-      };
-    };
+  // Memoize the addSticker function to prevent it from changing on every render
+  const addSticker = useCallback(() => {
+    const getNewSticker = () => ({
+      id: nanoid(),
+      variant: $numSams,
+    });
     setStickers((prev) => [...prev, getNewSticker()]);
-  };
+  }, [$numSams]); // Only re-create this function when $numSams changes
 
-  // biome-ignore lint/correctness/useExhaustiveDependencies: addSticker changes on every render and should not be used as a dependency
   useEffect(() => {
-    if ($numSams > stickers.length) addSticker();
-
-    if ($numSams === 0) setStickers([]);
-
-    if ($numSams > 2) {
-      setShowShoo(true);
-    } else {
-      setShowShoo(false);
+    // If there are more Sams than stickers, add a new sticker
+    if ($numSams > stickers.length) {
+      addSticker();
     }
-  }, [$numSams, stickers]);
+
+    // Clear stickers if there are no Sams
+    if ($numSams === 0 && stickers.length > 0) {
+      setStickers([]);
+    }
+
+    // Show or hide the Shoo button based on the number of Sams
+    setShowShoo($numSams > 2);
+  }, [$numSams, stickers.length, addSticker]);
 
   return (
     <div className="stickers" style={{ viewTransitionName: "stickers" }}>

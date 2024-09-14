@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eva.town/sitemap-index.xml

@@ -1,0 +1,125 @@
+---
+import { getCollection } from "astro:content";
+
+import Center from "../components/Center.astro";
+import ProjectPreview from "../components/ProjectPreview.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const concerts = await getCollection("concerts");
+
+// Sort by year subdirectory
+concerts.sort((a: any, b: any) =>
+  Number.parseInt(a.id.substring(0, 4)) > Number.parseInt(b.id.substring(0, 4))
+    ? -1
+    : 1,
+);
+---
+
+<BaseLayout
+  title="Eva Decker"
+  description="Eva is a designer and web developer based in Brooklyn, NY."
+  includeFooter
+>
+  <Center>
+    <section class="home">
+      <h1 class="visuallyhidden">Eva designs and builds for the web</h1>
+      <div class="intro">
+        <p>
+          <strong>Concerts Page</strong> with description <span class="nowrap"
+            ><a role="button" data-sam-button>Samwise</a>.</span
+          >
+        </p>
+      </div>
+      
+      <div class="continue">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="40px"
+          fill="currentColor"
+          ><path
+            d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"
+          ></path></svg
+        >
+      </div>
+    </section>
+   
+    <section class="work">
+      {concerts.map((project: any) => <ProjectPreview project={project} />)}
+    </section>
+   
+  </Center>
+</BaseLayout>
+
+
+
+<style lang="scss">
+  .visuallyhidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3xl);
+    min-height: calc(100svh - var(--space-3xl) * 1.8);
+  }
+
+  .continue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    color: var(--gray-10);
+
+    @supports (animation-timeline: view()) {
+      animation-name: fadeOut;
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+      animation-timeline: view();
+      animation-range: contain 50% contain 80%;
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .work {
+    padding-block: var(--space-3xl) var(--space-xl);
+  }
+
+  .intro {
+    padding-block-start: var(--space-2xl);
+    text-wrap: balance;
+    user-select: none;
+
+    p {
+      font-size: var(--step-4);
+      letter-spacing: var(--letter-spacing-condensed);
+      line-height: var(--line-height-tight);
+    }
+  }
+
+  
+
+  [data-sam-button] {
+    cursor: pointer;
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+</style>

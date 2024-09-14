@@ -67,6 +67,86 @@ export const collections = {
       }),
   }),
 
+  concerts: defineCollection({
+    type: "content",
+    schema: ({ image }) =>
+      z.object({
+        title: z.string(),
+        timeline: z.object({
+          start: z.string(),
+          end: z.string(),
+        }),
+        programme: z.string(),
+        img: z
+          .object({
+            src: image(),
+            alt: z.string(),
+          })
+          .array()
+          .optional(),
+        video: z
+          .object({
+            src: z.string(),
+            poster: z.string(),
+          })
+          .array()
+          .optional(),
+        ogImage: image().optional(),
+      }),
+  }),
+  research: defineCollection({
+    type: "content",
+    schema: ({ image }) =>
+      z.object({
+        title: z.string(),
+        timeline: z.object({
+          start: z.string(),
+          end: z.string(),
+        }),
+        img: z
+          .object({
+            src: image(),
+            alt: z.string(),
+          })
+          .array()
+          .optional(),
+        video: z
+          .object({
+            src: z.string(),
+            poster: z.string(),
+          })
+          .array()
+          .optional(),
+        ogImage: image().optional(),
+      }),
+  }),
+  education: defineCollection({
+    type: "content",
+    schema: ({ image }) =>
+      z.object({
+        title: z.string(),
+        timeline: z.object({
+          start: z.string(),
+          end: z.string(),
+        }),
+        img: z
+          .object({
+            src: image(),
+            alt: z.string(),
+          })
+          .array()
+          .optional(),
+        video: z
+          .object({
+            src: z.string(),
+            poster: z.string(),
+          })
+          .array()
+          .optional(),
+        ogImage: image().optional(),
+      }),
+  }),
+
   experiments: defineCollection({
     type: "data",
     schema: () =>

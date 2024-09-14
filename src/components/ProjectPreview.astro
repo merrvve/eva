@@ -3,27 +3,27 @@ import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 
 interface Props {
-  project: CollectionEntry<"work">;
+  project: CollectionEntry<"concerts">;
 }
 
 const { project } = Astro.props;
 
 const { data, render } = project;
 
-const { title, img, video, timeline } = data;
+const { title, img, video, timeline, programme } = data;
 const { Content } = await render();
 ---
 
 <div class="project">
   {
-    img?.map((img) => (
+    img?.map((img:any) => (
       <div class="media">
         <Image src={img.src} alt={img.alt} class="img" />
       </div>
     ))
   }
   {
-    video?.map((video) => (
+    video?.map((video:any) => (
       <div class="media">
         <video
           autoplay
@@ -42,10 +42,21 @@ const { Content } = await render();
     <time>{timeline.start}&ndash;{timeline.end}</time>
     <h2>{title}</h2>
     <Content />
+    {
+      programme && (
+        <span class="programme">
+          <strong>Programme:</strong> {programme}
+        </span>
+      )
+    }
   </div>
 </div>
 
 <style lang="scss">
+  .programme {
+    color: var(--gray-11);
+    font-size: var(--step--1);
+  }
   @keyframes fadeIn {
     from {
       opacity: 0;
