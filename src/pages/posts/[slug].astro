@@ -25,7 +25,7 @@ const { post, prev, next } = Astro.props;
 const { Content } = await post.render();
 
 const { data } = post;
-const { title, description, ogImage, datePublished, dateModified } = data;
+const { title, description, ogImage, datePublished } = data;
 ---
 
 <ProseLayout
@@ -33,7 +33,7 @@ const { title, description, ogImage, datePublished, dateModified } = data;
   description={description}
   ogImage={ogImage?.src}
   datePublished={datePublished}
-  dateModified={dateModified}
+  
 >
   <Content />
   <div class="pagination" slot="after-prose">

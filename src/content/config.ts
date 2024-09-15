@@ -94,59 +94,8 @@ export const collections = {
         ogImage: image().optional(),
       }),
   }),
-  research: defineCollection({
-    type: "content",
-    schema: ({ image }) =>
-      z.object({
-        title: z.string(),
-        timeline: z.object({
-          start: z.string(),
-          end: z.string(),
-        }),
-        img: z
-          .object({
-            src: image(),
-            alt: z.string(),
-          })
-          .array()
-          .optional(),
-        video: z
-          .object({
-            src: z.string(),
-            poster: z.string(),
-          })
-          .array()
-          .optional(),
-        ogImage: image().optional(),
-      }),
-  }),
-  education: defineCollection({
-    type: "content",
-    schema: ({ image }) =>
-      z.object({
-        title: z.string(),
-        timeline: z.object({
-          start: z.string(),
-          end: z.string(),
-        }),
-        img: z
-          .object({
-            src: image(),
-            alt: z.string(),
-          })
-          .array()
-          .optional(),
-        video: z
-          .object({
-            src: z.string(),
-            poster: z.string(),
-          })
-          .array()
-          .optional(),
-        ogImage: image().optional(),
-      }),
-  }),
-
+ 
+ 
   experiments: defineCollection({
     type: "data",
     schema: () =>
@@ -159,6 +108,45 @@ export const collections = {
           .object({
             name: z.string(),
             url: z.string().url(),
+          })
+          .array()
+          .optional(),
+      }),
+  }),
+
+
+  research: defineCollection({
+    type: "content",
+    schema: ({image}) =>
+      z.object({
+        title: z.string(),
+        datePublished: z.date(),
+        ogImage: image().optional(),
+        description: z.string(),
+        url: z.string(),
+        projectLeader: z
+          .object({
+            name: z.string(),
+            url: z.string(),
+          })
+          .array()
+          .optional(),
+      }),
+  }),
+
+  education: defineCollection({
+    type: "content",
+    schema: ({image}) =>
+      z.object({
+        title: z.string(),
+        datePublished: z.date(),
+        description: z.string(),
+        ogImage: image().optional(),
+        url: z.string(),
+        teacher: z
+          .object({
+            name: z.string(),
+            url: z.string(),
           })
           .array()
           .optional(),

@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
-
+import dayjs from "dayjs";
+import PostResearch from "../components/PostResearch.astro";
 import Center from "../components/Center.astro";
 import ProjectPreview from "../components/ProjectPreview.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
@@ -13,6 +14,13 @@ concerts.sort((a: any, b: any) =>
     ? -1
     : 1,
 );
+
+const research = await getCollection("research");
+research.sort((a:any, b: any) => {
+  return dayjs(b.data.datePublished).isBefore(dayjs(a.data.datePublished))
+    ? -1
+    : 1;
+});
 ---
 
 <BaseLayout
@@ -29,8 +37,8 @@ concerts.sort((a: any, b: any) =>
           <strong><a href="/concerts" class="inline-link">Concerts</a></strong>, 
           <strong><a href="/research" class="inline-link">Research</a></strong> and
           <strong><a href="/education" class="inline-link">Education</a></strong> pages
-          in NYC with <span class="nowrap"
-            ><a role="button" data-sam-button>Samwise</a>.</span
+          and more text with some <span class="nowrap"
+            ><a role="button" data-sam-button>links</a> if available.</span
           >
         </p>
       </div>
@@ -51,7 +59,20 @@ concerts.sort((a: any, b: any) =>
     <section class="work">
       {concerts.map((project: any) => <ProjectPreview project={project} />)}
     </section>
-    
+    <section>
+      <h2>Research</h2>
+      {
+        research.map((res: any) => (
+          <PostResearch
+            url={res.data.url}
+            title={res.data.title}
+            description={res.data.description}
+            datePublished={res.data.datePublished}
+            projectLeader={res.data.projectLeader}
+          />
+        ))
+      }
+    </section>
     
   </Center>
 </BaseLayout>
@@ -127,4 +148,15 @@ concerts.sort((a: any, b: any) =>
       transform: scale(0.95);
     }
   }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-l);
+    margin-bottom: 1rem;
+    & + section {
+      margin-block-start: var(--space-3xl);
+    }
+  }
+
 </style>
