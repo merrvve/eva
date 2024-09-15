@@ -5,6 +5,7 @@ import PostResearch from "../components/PostResearch.astro";
 import Center from "../components/Center.astro";
 import ProjectPreview from "../components/ProjectPreview.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import PostEdu from "../components/PostEdu.astro";
 
 const concerts = await getCollection("concerts");
 
@@ -17,6 +18,13 @@ concerts.sort((a: any, b: any) =>
 
 const research = await getCollection("research");
 research.sort((a:any, b: any) => {
+  return dayjs(b.data.datePublished).isBefore(dayjs(a.data.datePublished))
+    ? -1
+    : 1;
+});
+
+const education = await getCollection("education");
+education.sort((a:any, b: any) => {
   return dayjs(b.data.datePublished).isBefore(dayjs(a.data.datePublished))
     ? -1
     : 1;
@@ -69,6 +77,20 @@ research.sort((a:any, b: any) => {
             description={res.data.description}
             datePublished={res.data.datePublished}
             projectLeader={res.data.projectLeader}
+          />
+        ))
+      }
+    </section>
+    <section>
+      <h2>Education</h2>
+      {
+        education.map((res: any) => (
+          <PostEdu
+            url={res.data.url}
+            title={res.data.title}
+            description={res.data.description}
+            datePublished={res.data.datePublished}
+            teacher={res.data.teacher}
           />
         ))
       }
