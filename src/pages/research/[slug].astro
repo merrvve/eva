@@ -21,6 +21,7 @@ export async function getStaticPaths() {
     },
   }));
 }
+
 const { res, prev, next } = Astro.props;
 const { Content } = await res.render();
 
@@ -39,7 +40,7 @@ const { title, description, ogImage, datePublished } = data;
   <div class="pagination" slot="after-prose">
     {
       prev && (
-        <a href={prev.slug.split('/')[1]} class="prev">
+        <a href={`/research/${prev.slug.split('/')[1]}` } class="prev">
           <span class="label">Previous</span>
           <span class="title">{prev.data.title}</span>
         </a>
@@ -47,7 +48,7 @@ const { title, description, ogImage, datePublished } = data;
     }
     {
       next && (
-        <a href={next.slug.split('/')[1]} class="next">
+        <a href={`/research/${next.slug.split('/')[1]}`} class="next">
           <span class="label">Next</span>
           <span class="title">{next.data.title}</span>
         </a>

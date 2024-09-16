@@ -98,14 +98,4 @@
   document.addEventListener("astro:after-swap", () => handleAnimation());
 </script>
 
-<script>
-  import * as Fathom from "fathom-client";
 
-  document.addEventListener("astro:page-load", () => {
-    document
-      .querySelector("[data-fathom='logo']")
-      ?.addEventListener("click", () => {
-        Fathom.trackEvent("nav: click logo");
-      });
-  });
-</script>

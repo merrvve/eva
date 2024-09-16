@@ -13,41 +13,27 @@ import { SubscribeForm } from "../Subscribe/SubscribeForm";
         <a href="/colophon" data-fathom="footer-link">Colophon</a>
       </div>
       <div class="links">
+        
         <a
-          href="https://www.are.na/eva-decker/"
-          target="_blank"
-          data-fathom="footer-link">Are.na</a
-        >
-        <a
-          href="https://bsky.app/profile/eva.town"
-          target="_blank"
-          data-fathom="footer-link">Bluesky</a
-        >
-        <a
-          href="https://github.com/evadecker"
-          target="_blank"
-          data-fathom="footer-link">GitHub</a
-        >
-        <a
-          href="https://www.goodreads.com/evadecker"
-          target="_blank"
-          data-fathom="footer-link">Goodreads</a
-        >
-        <a
-          href="https://linkedin.com/in/evadecker"
+        href="https://instagram.com/"
+        target="_blank"
+        data-fathom="footer-link">Instagram</a
+      >
+      <a
+          href="https://linkedin.com/"
           target="_blank"
           data-fathom="footer-link">LinkedIn</a
         >
-      </div>
-      <div class="banner">
-        <span class="emoji">🇵🇸</span>
         <a
-          href="https://www.jewishvoiceforpeace.org/"
+          href="https://www.are.na/"
           target="_blank"
-          data-fathom="footer-link"
-          >Freedom for Palestine.
-        </a>
+          data-fathom="footer-link">Are.na</a
+        >
+       
+        
+        
       </div>
+      
       <div class="subscribe">
         <SubscribeForm client:visible />
       </div>
@@ -96,45 +82,11 @@ import { SubscribeForm } from "../Subscribe/SubscribeForm";
     color: var(--gray-11);
   }
 
-  .banner {
-    grid-area: banner;
-    color: var(--gray-11);
-    display: flex;
-    align-items: center;
-    gap: var(--space-s);
-    transition: background-color 0.2s ease-in-out;
-
-    a {
-      text-decoration: none;
-    }
-
-    .emoji {
-      transform: scale(1.5) translateY(0.04em);
-    }
-
-    @media (hover: hover) and (pointer: fine) {
-      &:hover {
-        color: var(--gray-12);
-      }
-    }
-  }
+  
 
   .subscribe {
     grid-area: form;
   }
 </style>
 
-<script>
-  import * as Fathom from "fathom-client";
 
-  document.addEventListener("astro:page-load", () => {
-    document
-      .querySelectorAll("[data-fathom='footer-link']")
-      .forEach((navlink) => {
-        navlink.addEventListener("click", () => {
-          const url = navlink.getAttribute("href");
-          Fathom.trackEvent(`nav: click link (${url})`);
-        });
-      });
-  });
-</script>

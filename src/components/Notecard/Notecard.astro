@@ -78,17 +78,3 @@ const backgroundImage = `url(/images/notecards/notecard${theme <= TOTAL_THEMES ?
   }
 </style>
 
-<script>
-  import * as Fathom from "fathom-client";
-
-  document.addEventListener("astro:page-load", () => {
-    document
-      .querySelectorAll("[data-fathom='author-link']")
-      .forEach((author) => {
-        author.addEventListener("click", () => {
-          const url = author.getAttribute("href");
-          Fathom.trackEvent(`guestbook: click link (${url})`);
-        });
-      });
-  });
-</script>

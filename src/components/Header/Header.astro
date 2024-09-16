@@ -28,7 +28,6 @@ const navigation = [
           navigation.map((item) => (
             <a
               href={item.url}
-              data-fathom="nav-link"
               class={topLevelPath === item.url.split("/")[1] ? "active" : ""}
             >
               {item.label}
@@ -45,7 +44,7 @@ const navigation = [
 </header>
 
 <script>
-  import * as Fathom from "fathom-client";
+
   import { gray, grayDark } from "@radix-ui/colors";
   import {
     TRANSITION_BEFORE_SWAP,
@@ -85,7 +84,7 @@ const navigation = [
   function handleToggleTheme() {
     setActiveTheme(getActiveTheme() === "light" ? "dark" : "light");
 
-    Fathom.trackEvent("nav: toggle theme");
+   
   }
 
   // Run on initial load
@@ -99,14 +98,7 @@ const navigation = [
     }
   });
 
-  document.addEventListener("astro:page-load", () => {
-    document.querySelectorAll("[data-fathom='nav-link']").forEach((navlink) => {
-      navlink.addEventListener("click", () => {
-        const url = navlink.getAttribute("href");
-        Fathom.trackEvent(`nav: click link (${url})`);
-      });
-    });
-  });
+  
 </script>
 
 <style lang="scss">
