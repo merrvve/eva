@@ -278,11 +278,11 @@ export const SubscribeForm = () => {
             </p>
           </div>
         </div>
-        <Dialogue
+        {/* <Dialogue
           text={currentText}
           emote={currentEmote}
           onEmoteClick={handleEmoteClick}
-        />
+        /> */}
       </div>
       <form onSubmit={handleSubmit}>
         {!hasSubmitted ? (
