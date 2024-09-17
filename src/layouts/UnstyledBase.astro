@@ -18,7 +18,7 @@ export interface Props {
 const { title, description, ogImage, ogAlt } = Astro.props;
 
 const canonicalURL = ""
-const pageTitle = Astro.url.pathname === "/" ? title : `${title} · Eva Decker`;
+const pageTitle = Astro.url.pathname === "/" ? title : `${title} · Centro di Ricerca Interdisciplinare sulla Voce (CRIV)`;
 ---
 
 <!doctype html>
@@ -36,24 +36,6 @@ const pageTitle = Astro.url.pathname === "/" ? title : `${title} · Eva Decker`;
     />
     <AstroFont
       config={[
-        {
-          name: "HEX Franklin",
-          src: [
-            {
-              style: "normal",
-              path: join(
-                process.cwd(),
-                "public",
-                "fonts",
-                "HEX_Franklin_v0.3_Variable.woff2"
-              ),
-            },
-          ],
-          display: "swap",
-          selector: "body",
-          fallback: "sans-serif",
-          cssVariable: "font-sans",
-        },
         {
           name: "MonoLisa",
           src: [
@@ -92,7 +74,7 @@ const pageTitle = Astro.url.pathname === "/" ? title : `${title} · Eva Decker`;
     <link
       rel="alternate"
       type="application/rss+xml"
-      title="Dispatches from Eva Town"
+      title="Centro di Ricerca Interdisciplinare sulla Voce (CRIV)"
       href=""
     />
     <meta name="description" content={description} />
@@ -101,7 +83,7 @@ const pageTitle = Astro.url.pathname === "/" ? title : `${title} · Eva Decker`;
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:site_name" content="Eva Decker" />
+    <meta property="og:site_name" content="Centro di Ricerca Interdisciplinare sulla Voce (CRIV)" />
     <meta
       property="og:image"
       content={ogImage ?? `${Astro.url.origin}/og/default.png`}
