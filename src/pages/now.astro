@@ -10,17 +10,17 @@ events.sort((a, b) => {
 });
 
 const title = "Now";
-const description = "What’s Eva up to?";
+const description = "What’s up to?";
 ---
 
 <ProseLayout title={title} description={description}>
   <h4>Upcoming</h4>
   <ul class="events">
     {
-      events.map(async (event) => {
+      events.map(async (event,index) => {
         const { Content } = await event.render();
-
-        return (
+        if(index===0) {
+          return (
           <li class="event">
             <div class="dot" aria-hidden />
             <span class="heading">
@@ -31,31 +31,34 @@ const description = "What’s Eva up to?";
               <Content />
             </div>
           </li>
-        );
+          );
+        } 
+        else if(index===1) {
+          return(
+          <li class="event">
+            <div class="dot" aria-hidden />
+            <span class="heading">
+              <RelativeDate date={event.data.date} client:load />
+            </span>
+            <div class="content">
+              <Content />
+            </div>
+          </li>
+          );
+        }
+        
       })
     }
-    <li class="event">
-      <div class="dot" aria-hidden></div>
-      <span class="heading">Awhile ago</span>
-      <div class="content">
-        <p>
-          I discovered <a href="https://nownownow.com/"
-            >https://nownownow.com/</a
-          >, which talks about building a <code>/now</code> page for sharing brief
-          updates on how things are going <strong>right now</strong>, as if
-          catching up with a friend for the first time in awhile. Big life
-          picture stuff. Sounds nice. Maybe I'll make one.
-        </p>
-      </div>
-    </li>
+    
   </ul>
   <h4>Ongoing</h4>
   <ul class="events">
     {
-      events.map(async (event) => {
+      events.map(async (event, index) => {
         const { Content } = await event.render();
 
-        return (
+        if(index!==events.length-1) {
+          return (
           <li class="event">
             <div class="dot" aria-hidden />
             <span class="heading">
@@ -66,23 +69,25 @@ const description = "What’s Eva up to?";
               <Content />
             </div>
           </li>
-        );
+          );
+        } 
+        else {
+          return(
+          <li class="event">
+            <div class="dot" aria-hidden />
+            <span class="heading">
+              <RelativeDate date={event.data.date} client:load />
+            </span>
+            <div class="content">
+              <Content />
+            </div>
+          </li>
+          );
+        }
+        
       })
     }
-    <li class="event">
-      <div class="dot" aria-hidden></div>
-      <span class="heading">Awhile ago</span>
-      <div class="content">
-        <p>
-          I discovered <a href="https://nownownow.com/"
-            >https://nownownow.com/</a
-          >, which talks about building a <code>/now</code> page for sharing brief
-          updates on how things are going <strong>right now</strong>, as if
-          catching up with a friend for the first time in awhile. Big life
-          picture stuff. Sounds nice. Maybe I'll make one.
-        </p>
-      </div>
-    </li>
+    
   </ul>
   <style lang="scss">
     .events {

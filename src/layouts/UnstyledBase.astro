@@ -37,6 +37,24 @@ const pageTitle = Astro.url.pathname === "/" ? title : `${title} · Centro di Ri
     <AstroFont
       config={[
         {
+          name: "BricolageGrotesque",
+          src: [
+            {
+              style: "normal",
+              path: join(
+                process.cwd(),
+                "public",
+                "fonts",
+                "BricolageGrotesque.ttf"
+              ),
+            },
+          ],
+          display: "swap",
+          selector: "body",
+          fallback: "sans-serif",
+          cssVariable: "font-sans",
+        },
+        {
           name: "MonoLisa",
           src: [
             {
