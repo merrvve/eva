@@ -5,14 +5,11 @@ import {
   type ChangeEvent,
   type FormEvent,
   type FormEventHandler,
-  useEffect,
   useState,
 } from "react";
 
-import { isValidEmail } from "../../helpers/helpers";
 import { Icon } from "../Icon/Icon";
-import { Dialogue } from "./Dialogue/Dialogue";
-import { type EmoteType, emoteData } from "./Dialogue/Emote";
+
 
 interface SniperResponse {
   url: string;
@@ -20,138 +17,14 @@ interface SniperResponse {
   provider_pretty: string;
 }
 
-type RemarkType =
-  | "intro"
-  | "someCharacters"
-  | "deleting"
-  | "validEmail"
-  | "submitting"
-  | "success"
-  | "error";
 
-interface Remark {
-  text: string[];
-  emote: EmoteType;
-}
-
-const TRIGGER_SOME_CHARACTERS_DIALOGUE_AT_LENGTH = 4;
-const REMARK_TIMEOUT = 1000;
-
-const remarks: Record<RemarkType, Remark> = {
-  intro: {
-    text: [
-      "hey bestie",
-      "what’s up",
-      "hey you",
-      "hey nerd",
-      "you found me!",
-      "welcome 2 my garden ✿",
-      "salutations",
-      "hi~ (❛‿❛✿̶̥̥)",
-      "oh hey",
-      "hiiieee",
-      "hello hello",
-      "hey dork",
-      "oh. hi",
-      "bonjour",
-      "good morning(??)",
-      "hello stranger",
-      "well hello!",
-      "wassup",
-    ],
-    emote: "happy",
-  },
-  someCharacters: {
-    text: [
-      "typing! incredible",
-      "we love to type",
-      "tap tap tap",
-      "typing is fun",
-      "you type so good",
-      "clicky clack",
-      "type type type",
-      "click clack",
-      "tap tap",
-      "type type",
-    ],
-    emote: "happy",
-  },
-  deleting: {
-    text: [
-      "deletinggg",
-      "goodbye",
-      "clear that box",
-      "sometimes people make mistakes",
-      "it’s ok to go back",
-      "DELETE",
-      "D E S T R O Y",
-      "the feminine urge to destroy",
-      "ᕙ(`▿´)ᕗ",
-      "lol bye",
-      "yes. that can go",
-    ],
-    emote: "flushed",
-  },
-  validEmail: {
-    text: [
-      "nice email",
-      "that’s a good email",
-      "yup. that’s an email",
-      "what a good email",
-      "mmm… electronic mail",
-      "nice address you have there",
-      "congrats! it’s an email",
-      "looks like an email",
-      "i can’t believe it’s email",
-      "email! email! email!",
-    ],
-    emote: "playful",
-  },
-  submitting: {
-    text: [
-      "taking off…",
-      "subscribing…",
-      "connecting wires…",
-      "reticulating splines…",
-      "plugging in…",
-      "counting down…",
-      "dialing up…",
-    ],
-    emote: "thinking",
-  },
-  success: {
-    text: ["yeah! get ready for e-mail (eva-mail)"],
-    emote: "starstruck",
-  },
-  error: {
-    text: [
-      "computer says no",
-      "that didn’t work",
-      "it broke. idk",
-      "everything fell apart",
-      "try again?",
-      "oh no. computers",
-      "hm.. it broke. dang",
-      "that didn’t work. hm",
-      "something went wrong",
-    ],
-    emote: "sob",
-  },
-};
-
-const getRandomRemark = (remarks: string[]): string => {
-  return remarks[Math.floor(Math.random() * remarks.length)];
-};
 
 export const SubscribeForm = () => {
-  const [currentRemarkType, setCurrentRemarkType] = useState<RemarkType | null>(
-    null,
-  );
-  const [justDisplayedRemarks, setJustDisplayedRemarks] = useState(false);
+  
+  
   const [recipientEmail, setRecipientEmail] = useState<string>("");
 
-  const [currentText, setCurrentText] = useState<string | null>("");
-  const [currentEmote, setCurrentEmote] = useState<EmoteType>("neutral");
+  
 
   const [isHoveringOrFocusingSubscribe, setIsHoveringOrFocusingSubscribe] =
     useState(false);
@@ -159,64 +32,24 @@ export const SubscribeForm = () => {
   const [hasSubmitted, setHasSubmitted] = useState(false);
   const [sniperData, setSniperData] = useState<SniperResponse | null>(null);
 
-  const displayNewRemark = (
-    remarkType: RemarkType,
-    options?: { force?: boolean },
-  ) => {
-    const shouldDisplayNewRemark =
-      options?.force === true || !justDisplayedRemarks;
+  
 
-    if (shouldDisplayNewRemark && remarkType !== currentRemarkType) {
-      setCurrentRemarkType(remarkType);
-      setCurrentText(getRandomRemark(remarks[remarkType].text));
-      setCurrentEmote(remarks[remarkType].emote);
-    }
-  };
+  
 
-  useEffect(() => {
-    if (currentRemarkType) {
-      setJustDisplayedRemarks(true);
-      setTimeout(() => {
-        setJustDisplayedRemarks(false);
-      }, REMARK_TIMEOUT);
-    }
-  }, [currentRemarkType]);
+  
 
-  const handleFocus = () => {
-    if (currentRemarkType === null) {
-      displayNewRemark("intro");
-    }
-  };
-
-  const handleBlur = () => {
-    setCurrentEmote("neutral");
-  };
+  
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { value } = e.target;
     setRecipientEmail(value);
-
-    if (isValidEmail(value)) {
-      displayNewRemark("validEmail", { force: true });
-    }
-
-    if (
-      value.length === TRIGGER_SOME_CHARACTERS_DIALOGUE_AT_LENGTH &&
-      value.length > recipientEmail.length
-    ) {
-      displayNewRemark("someCharacters");
-    }
-
-    if (value.length < recipientEmail.length) {
-      displayNewRemark("deleting");
-    }
   };
 
   const handleSubmit: FormEventHandler<HTMLFormElement> = (e: FormEvent) => {
     e.preventDefault();
 
     setIsSubmitting(true);
-    displayNewRemark("submitting", { force: true });
+    
 
     const url =
       "https://buttondown.email/api/emails/embed-subscribe/notesfromeva";
@@ -226,13 +59,13 @@ export const SubscribeForm = () => {
       .then((response) => {
         if (response.ok) {
           setTimeout(() => {
-            displayNewRemark("success", { force: true });
+            
             setHasSubmitted(true);
             setIsSubmitting(false);
           }, 1500);
         } else {
           console.error(response);
-          displayNewRemark("error", { force: true });
+          
           setIsSubmitting(false);
         }
       })
@@ -256,16 +89,7 @@ export const SubscribeForm = () => {
       });
   };
 
-  const handleEmoteClick = () => {
-    const emoteKeys = Object.keys(emoteData) as EmoteType[];
-    const currentEmoteIndex = emoteKeys.indexOf(currentEmote);
-    const nextEmote = emoteKeys[currentEmoteIndex + 1] || emoteKeys[0];
-    setCurrentEmote(nextEmote);
-    setCurrentText("");
-    setCurrentRemarkType(null);
-
-  };
-
+  
   return (
     <div className="subscribe">
       <div className="subscribe-content">
@@ -273,8 +97,7 @@ export const SubscribeForm = () => {
           <div>
             <h2>Subscribe</h2>
             <p>
-              I send emails a few times a year about design and web dev. Written
-              like notes to friends.
+              Subscribe to out email list to
             </p>
           </div>
         </div>
@@ -297,8 +120,7 @@ export const SubscribeForm = () => {
               id="email"
               name="email"
               placeholder="Your email"
-              onFocus={handleFocus}
-              onBlur={handleBlur}
+              
               onChange={handleChange}
               value={recipientEmail}
               disabled={isSubmitting || hasSubmitted}
