@@ -67,6 +67,34 @@ export const collections = {
       }),
   }),
 
+  homeCategories: defineCollection({
+    type: "content",
+    schema: ({ image }) =>
+      z.object({
+        title: z.string(),
+        link: z.string(),
+        timeline: z.object({
+          start: z.string(),
+          end: z.string(),
+        }),
+        img: z
+          .object({
+            src: image(),
+            alt: z.string(),
+          })
+          .array()
+          .optional(),
+        video: z
+          .object({
+            src: z.string(),
+            poster: z.string(),
+          })
+          .array()
+          .optional(),
+        ogImage: image().optional(),
+      }),
+  }),
+
   concerts: defineCollection({
     type: "content",
     schema: ({ image }) =>

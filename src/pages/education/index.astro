@@ -16,8 +16,8 @@ education.sort((a:any, b: any) => {
     : 1;
 });
 
-const title = "The Garden";
-const description = "Every garden starts somewhere. This is mine.";
+const title = "Education";
+const description = "Education description text";
 ---
 
 <BaseLayout title={title} description={description} includeFooter padBottom>
@@ -25,7 +25,6 @@ const description = "Every garden starts somewhere. This is mine.";
   <Center>
     
     <section>
-      <h2>Education</h2>
       {
         education.map((res: any) => (
           <PostEdu

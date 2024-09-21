@@ -1,34 +1,13 @@
 ---
 import { getCollection } from "astro:content";
 import dayjs from "dayjs";
-import PostResearch from "../components/PostResearch.astro";
 import Center from "../components/Center.astro";
-import ProjectPreview from "../components/ProjectPreview.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import PostEdu from "../components/PostEdu.astro";
+import HomeCategoryView from "src/components/homeCategoryView.astro";
 
-const concerts = await getCollection("concerts");
+const homeCategories = await getCollection("homeCategories");
 
-// Sort by year subdirectory
-concerts.sort((a: any, b: any) =>
-  Number.parseInt(a.id.substring(0, 4)) > Number.parseInt(b.id.substring(0, 4))
-    ? -1
-    : 1,
-);
 
-const research = await getCollection("research");
-research.sort((a:any, b: any) => {
-  return dayjs(b.data.datePublished).isBefore(dayjs(a.data.datePublished))
-    ? -1
-    : 1;
-});
-
-const education = await getCollection("education");
-education.sort((a:any, b: any) => {
-  return dayjs(b.data.datePublished).isBefore(dayjs(a.data.datePublished))
-    ? -1
-    : 1;
-});
 ---
 
 <BaseLayout
@@ -63,38 +42,10 @@ education.sort((a:any, b: any) => {
         >
       </div>
     </section>
-    
     <section class="work">
-      {concerts.map((project: any) => <ProjectPreview project={project} />)}
+      {homeCategories.map((category: any) => <HomeCategoryView project={category} />)}
     </section>
-    <section>
-      <h2>Research</h2>
-      {
-        research.map((res: any) => (
-          <PostResearch
-            url={res.data.url}
-            title={res.data.title}
-            description={res.data.description}
-            datePublished={res.data.datePublished}
-            projectLeader={res.data.projectLeader}
-          />
-        ))
-      }
-    </section>
-    <section>
-      <h2>Education</h2>
-      {
-        education.map((res: any) => (
-          <PostEdu
-            url={res.data.url}
-            title={res.data.title}
-            description={res.data.description}
-            datePublished={res.data.datePublished}
-            teacher={res.data.teacher}
-          />
-        ))
-      }
-    </section>
+   
     
   </Center>
 </BaseLayout>
