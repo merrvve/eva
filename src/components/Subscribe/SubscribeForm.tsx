@@ -96,77 +96,40 @@ export const SubscribeForm = () => {
         <div className="subscribe-header">
           <div>
             <h2>Subscribe</h2>
-            <p>
-              Subscribe our email list.
-            </p>
+            <p>Subscribe to our email list.</p>
           </div>
         </div>
-        {/* <Dialogue
-          text={currentText}
-          emote={currentEmote}
-          onEmoteClick={handleEmoteClick}
-        /> */}
       </div>
-      <form onSubmit={handleSubmit}>
-        {!hasSubmitted ? (
-          <div
-            className="inputWrapper"
-            aria-disabled={isSubmitting || hasSubmitted}
-          >
-            <input
-              aria-label="Your email"
-              className="input"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your email"
-              
-              onChange={handleChange}
-              value={recipientEmail}
-              disabled={isSubmitting || hasSubmitted}
-            />
-            <button
-              type="submit"
+      
+      {/* Mailchimp Subscription Form */}
+      <form
+        action="https://gmail.us9.list-manage.com/subscribe/post"
+        method="POST"
+      >
+        <input type="hidden" name="u" value="f12484491da91a865fe99df88" />
+        <input type="hidden" name="id" value="873b424183" />
+        
+        <div className="inputWrapper">
+          <input
+            type="email"
+            name="MERGE0" id="MERGE0"
+            placeholder="Your email"
+            required
+            className="input"
+          />
+          <button type="submit" 
               className={classNames("iconButton", {
                 loading: isSubmitting,
               })}
               disabled={isSubmitting || hasSubmitted}
-              aria-label="Subscribe"
-              onFocus={() => {
-                setIsHoveringOrFocusingSubscribe(true);
-              }}
-              onBlur={() => {
-                setIsHoveringOrFocusingSubscribe(false);
-              }}
-              onMouseOver={() => {
-                setIsHoveringOrFocusingSubscribe(true);
-              }}
-              onMouseLeave={() => {
-                setIsHoveringOrFocusingSubscribe(false);
-              }}
-            >
-              <Icon
+              aria-label="Subscribe">
+            
+			<Icon
                 icon={isSubmitting ? "loader" : "mailAdd"}
                 variant={isHoveringOrFocusingSubscribe ? "filled" : "line"}
               />
-            </button>
-          </div>
-        ) : sniperData ? (
-          <a
-            href={sniperData.url}
-            className="sniperLink"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="sniperLogo">
-              <img src={sniperData.image} alt={sniperData.provider_pretty} />
-            </div>
-            Open {sniperData.provider_pretty}
-            <Icon icon="arrowRight" />
-          </a>
-        ) : (
-          <div className="checkInbox">Check your inbox</div>
-        )}
+          </button>
+        </div>
       </form>
     </div>
   );
