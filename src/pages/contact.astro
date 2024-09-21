@@ -1,33 +1,27 @@
 ---
-import { getCollection } from "astro:content";
-import dayjs from "dayjs";
-import { RelativeDate } from "../components/RelativeDate/RelativeDate";
 import ProseLayout from "../layouts/ProseLayout.astro";
 
-const events = await getCollection("now");
-events.sort((a, b) => {
-  return dayjs(b.data.date).isBefore(dayjs(a.data.date)) ? -1 : 1;
-});
 
 const title = "Contact Us";
 const description = "Contact Form";
 ---
-
 <ProseLayout title={title} description={description}>
     <section>
         
     
-        <form action="#" method="POST" class="subscribe-content contact-form">
+        <form action="https://formspree.io/f/xblrvyvo"
+        method="POST" id="contactForm" class="subscribe-content contact-form">
           <div class="inputWrapper">
-            <input type="text" name="name" class="input" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" class="input" placeholder="Your Email" required>
+          </div>
+          <div class="inputWrapper">
+            <input id="subject" type="text" name="name" class="input" placeholder="Subject" >
           </div>
           
-          <div class="inputWrapper">
-            <input type="email" name="email" class="input" placeholder="Your Email" required>
-          </div>
+          
     
           <div class="inputWrapper">
-            <textarea name="message" class="input message-area" placeholder="Your Message" rows="5" required></textarea>
+            <textarea name="message" id="message" class="input message-area" placeholder="Your Message" rows="5" required></textarea>
           </div>
     
           <div class="inputWrapper">
@@ -37,6 +31,10 @@ const description = "Contact Form";
     
           <div class="disclaimer">
             We respect your privacy. Your information is safe with us.
+          </div>
+          <div class="disclaimer">
+            <span id="successMessage"></span>
+            <span id="errorMessage"></span>
           </div>
         </form>
       </section>
@@ -120,3 +118,4 @@ const description = "Contact Form";
 
   </style>
 </ProseLayout>
+
