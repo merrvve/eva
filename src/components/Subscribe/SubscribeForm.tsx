@@ -97,7 +97,7 @@ export const SubscribeForm = () => {
           <div>
             <h2>Subscribe</h2>
             <p>
-              Subscribe to out email list to
+              Subscribe our email list.
             </p>
           </div>
         </div>

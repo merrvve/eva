@@ -1,9 +1,8 @@
 ---
 import { getCollection } from "astro:content";
-import dayjs from "dayjs";
 import Center from "../components/Center.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import HomeCategoryView from "src/components/homeCategoryView.astro";
+import HomeCategoryView from "src/components/HomeCategoryView.astro";
 
 const homeCategories = await getCollection("homeCategories");
 
