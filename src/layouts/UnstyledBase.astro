@@ -53,25 +53,8 @@ const pageTitle = Astro.url.pathname === "/" ? title : `${title} · Centro di Ri
           selector: "body",
           fallback: "sans-serif",
           cssVariable: "font-sans",
-        },
-        {
-          name: "MonoLisa",
-          src: [
-            {
-              style: "normal",
-              path: join(
-                process.cwd(),
-                "public",
-                "fonts",
-                "MonoLisaVariableNormal.woff2"
-              ),
-            },
-          ],
-          display: "swap",
-          selector: "code",
-          fallback: "monospace",
-          cssVariable: "font-mono",
-        },
+        }
+        
       ]}
     />
     <link rel="icon" href="/favicon.svg?v=4" type="image/svg+xml" />

@@ -7,7 +7,7 @@ import { defineConfig } from "astro/config";
 
 
 export default defineConfig({
-  site: "https://eva.town",
+  site: "https://criv.netlify.app",
   output: "hybrid",
   prefetch: true,
   integrations: [
@@ -30,9 +30,5 @@ export default defineConfig({
   },
   redirects: {
     "/projects": "/",
-    "/projects/genderswap": "/posts/genderswap",
-    "/projects/boundaries-map": "/posts/boundaries-map",
-    "/projects/commonplace": "/posts/commonplace",
-    "/friends": "/webrings",
   },
 });

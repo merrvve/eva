@@ -6,7 +6,7 @@ import type { TransitionAnimationPair } from "astro";
 
 import Footer from "../components/Footer/Footer.astro";
 import Header from "../components/Header/Header.astro";
-import { Stickers } from "../components/Stickers/Stickers";
+
 import UnstyledBase from "./UnstyledBase.astro";
 
 interface Props {
@@ -76,7 +76,7 @@ const viewTransition = {
   </main>
   {includeFooter && <Footer />}
   <slot name="after-footer" />
-  <Stickers client:idle transition:persist="stickers" />
+  
 </UnstyledBase>
 
 <style>
