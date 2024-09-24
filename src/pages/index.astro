@@ -3,7 +3,8 @@ import { getCollection } from "astro:content";
 import Center from "../components/Center.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HomeCategoryView from "src/components/HomeCategoryView.astro";
-
+import { Image } from "astro:assets";
+import homeImage from "../assets/images/criv-opening-2.gif";
 const homeCategories = await getCollection("homeCategories");
 
 
@@ -23,12 +24,12 @@ const homeCategories = await getCollection("homeCategories");
           <strong><a href="/concerts" class="inline-link">Concerts</a></strong>, 
           <strong><a href="/research" class="inline-link">Research</a></strong> and
           <strong><a href="/education" class="inline-link">Education</a></strong> pages
-          and more text with some <span class="nowrap"
-            ><a role="button" data-sam-button>links</a> if available.</span
-          >
+          and more text
         </p>
       </div>
-      
+      <div class="synth">
+        <Image src={homeImage} alt="Home Image for CRIV"/>
+      </div>
       <div class="continue">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -113,13 +114,7 @@ const homeCategories = await getCollection("homeCategories");
 
   
 
-  [data-sam-button] {
-    cursor: pointer;
-
-    &:active {
-      transform: scale(0.95);
-    }
-  }
+ 
   
   section {
     display: flex;
@@ -131,4 +126,15 @@ const homeCategories = await getCollection("homeCategories");
     }
   }
 
+  .synth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (width > 640px) {
+      background: var(--gray-3);
+      border-radius: var(--radius-m);
+      
+    }
+  }
 </style>
