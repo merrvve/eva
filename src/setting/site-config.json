@@ -1,0 +1,35 @@
+{
+    "site": {
+        "title": "",
+        "description": ""
+    },
+    "homePage": {
+        "description": "",
+        "image":"",
+        "imageAlt":"",
+        "ogImage": "",
+        "ogAlt": ""
+    },
+    "concertsPage": {
+        "title": "",
+        "description": "",
+        "ogImage": "",
+        "ogAlt": ""
+    },
+    "footer": {
+        "links": [
+            {
+                "name": "",
+                "url": ""
+            }
+        ],
+        "social": [
+            {
+                "name": "",
+                "url": ""
+            }
+        ],
+        "subscriptionText": ""
+    }
+
+}
