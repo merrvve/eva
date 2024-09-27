@@ -8,26 +8,40 @@
         "ogImage": "../images/criv-opening-2.gif",
         "ogAlt": "Image description Text"
     },
-    "concertsPage": {
-        "title": "Concerts",
-        "description": "",
-        "ogImage": "",
-        "ogAlt": ""
-    },
     "footer": {
         "links": [
             {
-                "name": "",
-                "url": ""
+                "name": "People",
+                "url": "/people"
+            },
+            {
+                "name": "Colophon",
+                "url": "/colophon"
+            },
+            {
+                "name": "Sound System",
+                "url": "/sound-system"
             }
         ],
         "social": [
             {
-                "name": "",
-                "url": ""
+                "name": "Contact",
+                "url": "/contact"
+            },
+            {
+                "name": "Instagram",
+                "url": "https://instagram.com"
+            },
+            {
+                "name": "LinkedIn",
+                "url": "https://linkedin.com/"
+            },
+            {
+                "name": "Are.na",
+                "url": "https://www.are.na/"
             }
         ],
-        "subscriptionText": ""
+        "subscriptionText": "Subscribe to our email list"
     }
 
 }

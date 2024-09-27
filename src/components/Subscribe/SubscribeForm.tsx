@@ -5,10 +5,11 @@ import classNames from "classnames";
 
 import { Icon } from "../Icon/Icon";
 
+interface SubscribeFormProps {
+  text: string;
+}
 
-
-
-export const SubscribeForm = () => {
+export const  SubscribeForm: React.FC<SubscribeFormProps> = ({text}) => {
   
  
 
@@ -19,7 +20,7 @@ export const SubscribeForm = () => {
         <div className="subscribe-header">
           <div>
             <h2>Subscribe</h2>
-            <p>Subscribe to our email list.</p>
+            <p>{text}</p>
           </div>
         </div>
       </div>

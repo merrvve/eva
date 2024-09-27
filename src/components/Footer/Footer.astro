@@ -1,40 +1,30 @@
 ---
 import Center from "../Center.astro";
 import { SubscribeForm } from "../Subscribe/SubscribeForm";
+import config from "../../settings/site-config.json";
 ---
 
 <footer>
   <Center>
     <div class="content">
       <div class="links">
-        <a href="/people" data-fathom="footer-link">People</a>
-        <a href="/sound-system" data-fathom="footer-link">Sound System</a>
-        <a href="/colophon" data-fathom="footer-link">Colophon</a>
+        {
+          config.footer.links.map(link=>
+            <a href={link.url} data-fathom="footer-link">{link.name}</a>
+          )
+        }
       </div>
       <div class="links">
-        <a href="/contact" data-fathom="footer-link">Contact</a>
-        <a
-        href="https://instagram.com/"
-        target="_blank"
-        data-fathom="footer-link">Instagram</a
-      >
-      <a
-          href="https://linkedin.com/"
-          target="_blank"
-          data-fathom="footer-link">LinkedIn</a
-        >
-        <a
-          href="https://www.are.na/"
-          target="_blank"
-          data-fathom="footer-link">Are.na</a
-        >
-       
-        
+        {
+          config.footer.social.map(link=>
+            <a href={link.url} data-fathom="footer-link">{link.name}</a>
+          )
+        }
         
       </div>
       
       <div class="subscribe">
-        <SubscribeForm client:visible />
+        <SubscribeForm text={config.footer.subscriptionText} client:visible />
       </div>
     </div>
   </Center>
