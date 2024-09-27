@@ -9,4 +9,4 @@ img:
     alt: Image description
 ---
 
-This is description for research
+CRIV is a platform for transformative ideas and practices. The research program aims to enable collaborative projects and knowledge sharing through seminars, conferences, and publications. Bringing together theorists, artists, and critics, the research community explores topics at the intersection of voice studies, somatics, music/sound, and critical thinking.

@@ -3,32 +3,39 @@ import { getCollection } from "astro:content";
 import Center from "../components/Center.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HomeCategoryView from "src/components/HomeCategoryView.astro";
-import { Image } from "astro:assets";
-import homeImage from "../assets/images/criv-opening-2.gif";
+import config from '../settings/site-config.json';
+
 const homeCategories = await getCollection("homeCategories");
+const homeDesc = await Astro.glob("../content/descriptions/homePage.mdx")
+const desc = homeDesc.map(n => ({
+  //title: n.frontmatter.title,
+  Content: n.Content
+}))
+
 
 
 ---
 
 <BaseLayout
-  title="Centro di Ricerca Interdisciplinare sulla Voce (CRIV)"
-  description="Centro di Ricerca Interdisciplinare sulla Voce (CRIV)"
+  title={config.homePage.title}
+  description={config.homePage.description}
   includeFooter
 >
   <Center>
     <section class="home">
-      <h1 class="visuallyhidden">Centro di Ricerca Interdisciplinare sulla Voce (CRIV)</h1>
+      <h1 class="visuallyhidden">{config.homePage.title}</h1>
       <div class="intro">
         <p>
-          Description with links to
-          <strong><a href="/concerts" class="inline-link">Concerts</a></strong>, 
-          <strong><a href="/research" class="inline-link">Research</a></strong> and
-          <strong><a href="/education" class="inline-link">Education</a></strong> pages
-          and more text
+          {
+            homeDesc.map(({  Content }) => (
+                <Content />
+             ))
+          }
         </p>
+        
       </div>
       <div class="synth">
-        <img src={homeImage.src} width={homeImage.width} height={homeImage.height} alt="Home Image for CRIV"/>
+        <img src={config.homePage.image} alt={config.homePage.imageAlt}/>
       </div>
       <div class="continue">
         <svg
@@ -105,16 +112,15 @@ const homeCategories = await getCollection("homeCategories");
     text-wrap: balance;
     user-select: none;
 
-    p {
-      font-size: var(--step-4);
+    
+      font-size: var(--step-2);
       letter-spacing: var(--letter-spacing-condensed);
       line-height: var(--line-height-tight);
-    }
+    
   }
 
   
-
- 
+  
   
   section {
     display: flex;

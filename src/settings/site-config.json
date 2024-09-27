@@ -1,0 +1,33 @@
+{
+    "homePage": {
+        "title": "Centro di Ricerca Interdisciplinare sulla Voce (CRIV)",
+        "description": "Centro di Ricerca Interdisciplinare sulla Voce (CRIV)",
+        
+        "image":"../images/criv-opening-2.gif",
+        "imageAlt":"Image description Text",
+        "ogImage": "../images/criv-opening-2.gif",
+        "ogAlt": "Image description Text"
+    },
+    "concertsPage": {
+        "title": "Concerts",
+        "description": "",
+        "ogImage": "",
+        "ogAlt": ""
+    },
+    "footer": {
+        "links": [
+            {
+                "name": "",
+                "url": ""
+            }
+        ],
+        "social": [
+            {
+                "name": "",
+                "url": ""
+            }
+        ],
+        "subscriptionText": ""
+    }
+
+}

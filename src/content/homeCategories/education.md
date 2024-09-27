@@ -9,4 +9,4 @@ img:
     alt: Image description
 ---
 
-This is description for education
+CRIV offers educational programs spanning vocal and movement disciplines. These range from foundational to advanced studies, embracing both traditional and experimental approaches. Courses are available in various formats to accommodate diverse learning styles. Educators who bridge practical expertise with critical inquiry guide these initiatives.

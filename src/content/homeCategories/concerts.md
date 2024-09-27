@@ -9,4 +9,4 @@ img:
     alt: Image description
 ---
 
-This is description for concerts
+CRIV hosts two music programs in a specialized sound space: Soirées (Friday night) and Matinées (Sunday morning). Performances range from electronic avant-garde to early music, embracing both vocal and instrumental territories. Detours into other live arts complement the season. The Center supports artists in creating, performing, and disseminating their work, bridging international and local scenes.
