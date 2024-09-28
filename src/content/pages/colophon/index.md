@@ -50,7 +50,7 @@ Typography is scaled using a fluid type scale by [Utopia](https://utopia.fyi/blo
 
 Energy usage is minimized on this site by avoiding unnecessary scripts and compressing images.  
 
-As of September 26, 2024, carbon footprint analysis for [www.criv.eu](https://www.websitecarbon.com/website/criv-eu/) indicates that the site is cleaner than 84% of all web pages globally.  
+As of September 26, 2024, carbon footprint analysis for [*www.criv.eu*](https://www.websitecarbon.com/website/criv-eu/) indicates that the site is cleaner than 84% of all web pages globally.  
 
 The site uses Netlify’s serverless functions to further cut energy consumption.
 
@@ -58,6 +58,6 @@ The site uses Netlify’s serverless functions to further cut energy consumption
 
 This site aims to conform to the Level AA accessibility standards outlined in the [WCAG 2.2 specification](https://www.w3.org/TR/WCAG22/).
 
-If you notice an issue, please get in contact through our [form](/contact). We'll be happy to address it as soon and as best as possible.
+If you notice an issue, please get in contact through our [**form**](/contact). We'll be happy to address it as soon and as best as possible.
 
 
