@@ -9,9 +9,9 @@ dateModified: 2024-06-15
 
 ## Organization
 
-CRIV is powered by Associazione per la Voce e il Corpo (Association for Voice and Body), a non-profit organization founded in Bologna in 2024 that operates in the field of education and cultural production. The association oversees the Center's activities from an administrative point of view.
+CRIV is powered by **Associazione per la Voce e il Corpo** (*Association for Voice and Body*), a non-profit organization founded in Bologna in 2024 that operates in the field of education and cultural production. The association oversees the Center's activities from an administrative point of view.
 
-While CRIV's activities are open to both members and non-members of the Association, we warmly invite you to consider joining. Please note that students and teachers participating in our programs are required to become members.
+While CRIV's activities are open to both members and non-members of the Association, we warmly invite you to consider [**joining**](join). Please note that students and teachers participating in our programs are required to become members.
 
 ## Current Board
 
@@ -29,7 +29,7 @@ You can download the Association’s statute document [here](#) and the funding 
 
 You can apply for membership to the Association through this page: [JOIN US](#).
 
-Membership expires on December 31st of each year (regardless of the registration date). The membership card costs €15, in support of the Association's institutional activities.
+Membership expires on December 31st of each year (regardless of the registration date). The membership card costs **€15**, in support of the Association's institutional activities.
 
 ## About this site
 
