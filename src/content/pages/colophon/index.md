@@ -9,7 +9,9 @@ dateModified: 2024-06-15
 
 ## Organization
 
-CRIV is powered by Associazione per la Voce e il Corpo (Association for Voice and Body), a non-profit organization founded in Bologna in 2024 that operates in the field of education and cultural production. The association oversees the Center's activities from an administrative point of view. While CRIV's activities are open to both members and non-members of the Association, we warmly invite you to consider joining. Please note that students and teachers participating in our programs are required to become members.
+CRIV is powered by Associazione per la Voce e il Corpo (Association for Voice and Body), a non-profit organization founded in Bologna in 2024 that operates in the field of education and cultural production. The association oversees the Center's activities from an administrative point of view.
+
+While CRIV's activities are open to both members and non-members of the Association, we warmly invite you to consider joining. Please note that students and teachers participating in our programs are required to become members.
 
 ## Current Board
 
@@ -19,7 +21,9 @@ CRIV is powered by Associazione per la Voce e il Corpo (Association for Voice an
 
 ## Statute and Transparency:
 
-We believe in open communication and accountability to our members, donors, and the public. You can download the Association’s statute document [here](#) and the funding sources [here](#).
+We believe in open communication and accountability to our members, donors, and the public.
+
+You can download the Association’s statute document [here](#) and the funding sources [here](#).
 
 ## How to join:
 
@@ -36,16 +40,22 @@ Newsletters are sent through MailChimp.
 
 ## Typography
 
-Our logotype is set in [Ginto Rounded Black by Dynamo Typefaces](https://abcdinamo.com). The site text is set in [Bricolage Grotesque by Mathieu Triay](https://fonts.google.com/?query=Mathieu+Triay). Typography is scaled using a fluid type scale by [Utopia](https://utopia.fyi/blog/designing-with-fluid-type-scales/) set up by Eva Decker.
+Our logotype is set in [Ginto Rounded Black by Dynamo Typefaces](https://abcdinamo.com). The site text is set in [Bricolage Grotesque by Mathieu Triay](https://fonts.google.com/?query=Mathieu+Triay).
+
+Typography is scaled using a fluid type scale by [Utopia](https://utopia.fyi/blog/designing-with-fluid-type-scales/) set up by Eva Decker.
 
 ## Energy
 
 Energy usage is minimized on this site by avoiding unnecessary scripts and compressing images.  
+
 As of September 26, 2024, carbon footprint analysis for [www.criv.eu](https://www.websitecarbon.com/website/criv-eu/) indicates that the site is cleaner than 84% of all web pages globally.  
+
 The site uses Netlify’s serverless functions to further cut energy consumption.
 
 ## Accessibility
 
-This site aims to conform to the Level AA accessibility standards outlined in the [WCAG 2.2 specification](https://www.w3.org/TR/WCAG22/). If you notice an issue, please get in contact through our [form](/contact). We'll be happy to address it as soon and as best as possible.
+This site aims to conform to the Level AA accessibility standards outlined in the [WCAG 2.2 specification](https://www.w3.org/TR/WCAG22/).
+
+If you notice an issue, please get in contact through our [form](/contact). We'll be happy to address it as soon and as best as possible.
 
 
