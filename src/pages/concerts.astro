@@ -4,9 +4,13 @@ import { getCollection } from "astro:content";
 import Center from "../components/Center.astro";
 import ProjectPreview from "../components/ProjectPreview.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-
+import config from '../settings/site-config.json';
 const concerts = await getCollection("concerts");
-
+const descriptions = await Astro.glob("../content/descriptions/concerts.md")
+const desc = descriptions.map(n => ({
+  title: n.frontmatter.title,
+  Content: n.Content
+}))
 // Sort by year subdirectory
 concerts.sort((a: any, b: any) =>
   Number.parseInt(a.id.substring(0, 4)) > Number.parseInt(b.id.substring(0, 4))
@@ -16,12 +20,12 @@ concerts.sort((a: any, b: any) =>
 ---
 
 <BaseLayout
-  title="Centro di Ricerca Interdisciplinare sulla Voce (CRIV)"
-  description="Centro di Ricerca Interdisciplinare sulla Voce (CRIV)"
+  title={config.homePage.title}
+  description={config.homePage.description}
   includeFooter
 >
   <Center>
-    <section class="home">
+    <!-- <section class="home">
       <h1 class="visuallyhidden">CRIV</h1>
       <div class="intro">
         <p>
@@ -40,8 +44,17 @@ concerts.sort((a: any, b: any) =>
           ></path></svg
         >
       </div>
-    </section>
-   
+    </section> -->
+    <div class=page-header>
+      <h1 class="page-title">{config.homePage.title}</h1>
+      <p class="page-subtitle">
+        {
+          descriptions.map(({  Content }) => (
+              <Content />
+           ))
+        }
+      </p>
+    </div>
     <section class="work">
       {concerts.map((project: any) => <ProjectPreview project={project} />)}
     </section>
@@ -119,5 +132,18 @@ concerts.sort((a: any, b: any) =>
     &:active {
       transform: scale(0.95);
     }
+  }
+
+  .page-title {
+    padding-block-start: var(--space-2xl);
+    line-height: var(--line-height-display);
+  }
+  .page-subtitle {
+    font-size: var(--step-2);
+    line-height: var(--line-height-tight);
+    padding-block-start: var(--space-xs);
+  }
+  .page-header {
+    padding-block-end: var(--space-3xl);
   }
 </style>
