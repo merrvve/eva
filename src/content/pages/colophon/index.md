@@ -35,6 +35,8 @@ Membership expires on December 31st of each year (regardless of the registration
 
 This site was developed by Eva Decker, who designed and built its architecture. The frontend was developed by Merve Keskin, who extended the codebase and deployed the site as you enjoy it now.
 
+The photographs on the home page are courtesy of [Emanuela Sforza](people/#emanuela-sforza).
+
 The site is built using Astro, React, and TypeScript. Domain registration, hosting, and deployment are via Netlify.  
 Newsletters are sent through MailChimp.
 
