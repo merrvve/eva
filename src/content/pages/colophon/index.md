@@ -46,6 +46,6 @@ The site uses Netlify’s serverless functions to further cut energy consumption
 
 ## Accessibility
 
-This site aims to conform to the Level AA accessibility standards outlined in the [WCAG 2.2 specification](https://www.w3.org/TR/WCAG22/). If you notice an issue, please get in contact through our [form](#). We'll be happy to address it as soon and as best as possible.
+This site aims to conform to the Level AA accessibility standards outlined in the [WCAG 2.2 specification](https://www.w3.org/TR/WCAG22/). If you notice an issue, please get in contact through our [form](/contact). We'll be happy to address it as soon and as best as possible.
 
 

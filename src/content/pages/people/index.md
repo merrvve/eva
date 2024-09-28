@@ -3,9 +3,6 @@ title: People
 description: People Page
 datePublished: 2024-09-15
 dateModified: 2024-06-15
-img: ["./sample_image600.webp", "./sample_image900.webp", "./sample_image1200.webp"]
-imgAlt: Sample Image
-ogImage: ./sample_image1200.webp
 ---
 
 ## Description
