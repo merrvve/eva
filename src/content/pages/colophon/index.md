@@ -11,25 +11,22 @@ dateModified: 2024-06-15
 
 CRIV is powered by **Associazione per la Voce e il Corpo** (*Association for Voice and Body*), a non-profit organization founded in Bologna in 2024 that operates in the field of education and cultural production. The association oversees the Center's activities from an administrative point of view.
 
-While CRIV's activities are open to both members and non-members of the Association, we warmly invite you to consider [**joining**](join). Please note that students and teachers participating in our programs are required to become members.
+The Center's activities are open to both members and non-members of the Association. However, we warmly invite you to consider [**joining**](join). Please note that students and teachers participating in our programs are required to become members.
 
 ## Current Board
-
 - [Francesco Venturi](people/#francesco-venturi), President
 - [Sara Giordani](people/#sara-giordani), Board Secretary
 - [Nicol Bana](people/#nicol-bana), Vice-President
 
 ## Statute and Transparency:
 
-We believe in open communication and accountability to our members, donors, and the public.
-
-You can download the Association’s statute document [here](#) and the funding sources [here](#).
+We believe in open communication and accountability to our members, donors, and the public. You can download the Association’s statute document [here](#) and the funding sources [here](#).
 
 ## How to join:
 
-You can apply for membership to the Association through this page: [JOIN US](#).
+You can apply for membership to the Association through this page: [**JOIN US**](join).
 
-Membership expires on December 31st of each year (regardless of the registration date). The membership card costs **€15**, in support of the Association's institutional activities.
+Membership expires on December 31st of each year (regardless of the registration date). The membership card costs **€15**, in support of the Association's activities.
 
 ## About this site
 
@@ -37,22 +34,15 @@ This site was developed by **Eva Decker**, who designed and built its architectu
 
 The photographs on the home page are courtesy of [**Emanuela Sforza**](people/#emanuela-sforza).
 
-The site is built using Astro, React, and TypeScript. Domain registration, hosting, and deployment are via Netlify.  
-Newsletters are sent through MailChimp.
-
 ## Typography
 
-Our logotype is set in Ginto Rounded Black by [Dynamo Typefaces](https://abcdinamo.com). The site text is set in [Bricolage Grotesque by Mathieu Triay](https://fonts.google.com/?query=Mathieu+Triay).
-
-Typography is scaled using a fluid type scale by [Utopia](https://utopia.fyi/blog/designing-with-fluid-type-scales/) set up by Eva Decker.
+Our logotype is set in Ginto Rounded Black by [Dynamo Typefaces](https://abcdinamo.com). The site text is set in Bricolage Grotesque by [Mathieu Triay](https://fonts.google.com/?query=Mathieu+Triay).
 
 ## Energy
 
-Energy usage is minimized on this site by avoiding unnecessary scripts and compressing images.  
+Energy usage is minimized on this site by avoiding unnecessary scripts and compressing images. Main photographs are processed using Atkinson dithering. The site employs Netlify's serverless functions to further reduce energy consumption.
 
-As of September 26, 2024, carbon footprint analysis for [*www.criv.eu*](https://www.websitecarbon.com/website/criv-eu/) indicates that the site is cleaner than 84% of all web pages globally.  
-
-The site uses Netlify’s serverless functions to further cut energy consumption.
+As of September 26, 2024, [carbon footprint analysis](https://www.websitecarbon.com/website/criv-eu/) for *www.criv.eu* indicates that the site is cleaner than 84% of all web pages globally.  
 
 ## Accessibility
 
