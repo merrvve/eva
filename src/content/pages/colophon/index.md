@@ -9,14 +9,14 @@ dateModified: 2024-06-15
 
 ## Organization
 
-CRIV is powered by **Associazione per la Voce e il Corpo** (*Association for Voice and Body*), a non-profit organization founded in Bologna in 2024 that operates in the field of education and cultural production. The Association oversees the Center's activities from an administrative point of view.
+**Associazione per la Voce e il Corpo** (*Association for Voice and Body*) is a non-profit organization founded in Bologna in 2024 that operates in the field of education and cultural production. The Association oversees the Center's activities from an administrative point of view.
 
-The Center's activities are open to both members and non-members. However, we warmly invite you to consider [**joining**](join) the Association. Students and teachers participating in our programs are required to become members.
+The Center's activities are open to both members and non-members of the Association. However, we warmly invite you to consider [**joining**](/join). Students and teachers participating in our programs are required to become members.
 
 ## Current Board
-- [Francesco Venturi](people/#francesco-venturi), President
-- [Sara Giordani](people/#sara-giordani), Board Secretary
-- [Nicol Bana](people/#nicol-bana), Vice-President
+- [Francesco Venturi](/people#francesco-venturi), President
+- [Sara Giordani](/people#sara-giordani), Board Secretary
+- [Nicol Bana](/people#nicol-bana), Vice-President
 
 ## Statute and Transparency:
 
@@ -24,7 +24,7 @@ We believe in open communication and accountability to our members, donors, and 
 
 ## How to join:
 
-You can apply for membership to the Association through this page: [**JOIN US**](join).
+You can apply for membership to the Association through this page: [**JOIN US**](/join).
 
 Membership expires on December 31st of each year (regardless of the registration date). The membership card costs **€15**, in support of the Association's activities.
 
@@ -32,7 +32,7 @@ Membership expires on December 31st of each year (regardless of the registration
 
 This site was developed by **Eva Decker**, who designed and built its architecture. The frontend was developed by **Merve Keskin**, who extended the codebase and deployed the site as you enjoy it now.
 
-The photographs on the home page are courtesy of [**Emanuela Sforza**](people/#emanuela-sforza).
+The photographs on the home page are courtesy of [**Emanuela Sforza**](/people#emanuela-sforza).
 
 ## Typography
 
@@ -42,7 +42,7 @@ Our logotype is set in Ginto Rounded Black by [Dynamo Typefaces](https://abcdina
 
 Energy usage is minimized on this site by avoiding unnecessary scripts and compressing images. Main photographs are processed using Atkinson dithering. The site employs Netlify's serverless functions to further reduce energy consumption.
 
-As of September 26, 2024, [carbon footprint analysis](https://www.websitecarbon.com/website/criv-eu/) for *www.criv.eu* indicates that the site is cleaner than 84% of all web pages globally.  
+As of September 26, 2024, [carbon footprint analysis](https://www.websitecarbon.com/website/criv-eu/) for criv.eu indicates that the site is cleaner than 84% of all web pages globally.  
 
 ## Accessibility
 
