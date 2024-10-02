@@ -1,6 +1,6 @@
 ---
 title: Colophon
-description: Colophon Page
+description: Colophon Page Description
 datePublished: 2024-09-15
 dateModified: 2024-06-15
 

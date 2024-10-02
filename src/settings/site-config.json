@@ -15,13 +15,7 @@
         "ogAlt": "Centro di Ricerca Interdisciplinare sulla Voce (CRIV)",
         "date": "2024"
     },
-    "aboutPage": {
-        "title": "About",
-        "description": "About Description",
-        "ogImage": "../images/criv-opening-2.gif",
-        "ogAlt": "Centro di Ricerca Interdisciplinare sulla Voce (CRIV)",
-        "date": ""
-    },
+    
     "educationPage": {
         "title": "Education",
         "description": "Education Description",
@@ -36,26 +30,8 @@
         "ogAlt": "Centro di Ricerca Interdisciplinare sulla Voce (CRIV)",
         "date": "2024"
     },
-    "peoplePage": {
-        "title": "People",
-        "description": "People Description",
-        "ogImage": "../images/criv-opening-2.gif",
-        "ogAlt": "Centro di Ricerca Interdisciplinare sulla Voce (CRIV)",
-        "date": "2024"
-    },
-    "coundSystemPage": {
-        "title": "Sound System",
-        "description": "Sound System Description",
-        "ogImage": "../images/criv-opening-2.gif",
-        "ogAlt": "Centro di Ricerca Interdisciplinare sulla Voce (CRIV)"
-    },
-    "colophonPage": {
-        "title": "Colophon",
-        "description": "Colophon Description",
-        "ogImage": "../images/criv-opening-2.gif",
-        "ogAlt": "Centro di Ricerca Interdisciplinare sulla Voce (CRIV)",
-        "date": "2024"
-    },
+    
+    
     "footer": {
         "links": [
             {
