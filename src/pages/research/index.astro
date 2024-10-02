@@ -5,12 +5,10 @@ import PostResearch from "../../components/PostResearch.astro";
 
 import Center from "../../components/Center.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHeader from "src/components/PageHeader.astro";
+import config from '../../settings/site-config.json';
 
-const descriptions = await Astro.glob("../../content/descriptions/researchPage.md")
-const desc = descriptions.map(n => ({
-  title: n.frontmatter.title,
-  Content: n.Content
-}))
+
 
 const research = await getCollection("research");
 research.sort((a:any, b: any) => {
@@ -19,23 +17,18 @@ research.sort((a:any, b: any) => {
     : 1;
 });
 
-const title = "Research";
-const description = "Research description text.";
+const title = config.researchPage.title;
+const description = config.researchPage.description;
 ---
 
 <BaseLayout title={title} description={description} includeFooter padBottom>
-  
+  <PageHeader
+  title={config.researchPage.title}
+  description={config.researchPage.description}
+  datePublished={new Date(config.researchPage.date)}
+/>
   <Center>
-    <div class=page-header>
-      <h1 class="page-title">{title}</h1>
-      <p class="page-subtitle">
-        {
-          descriptions.map(({  Content }) => (
-              <Content />
-           ))
-        }
-      </p>
-    </div>
+   
     
     <section>
       {
@@ -62,17 +55,5 @@ const description = "Research description text.";
     & + section {
       margin-block-start: var(--space-3xl);
     }
-  }
-  .page-title {
-    padding-block-start: var(--space-2xl);
-    line-height: var(--line-height-display);
-  }
-  .page-subtitle {
-    font-size: var(--step-2);
-    line-height: var(--line-height-tight);
-    padding-block-start: var(--space-xs);
-  }
-  .page-header {
-    padding-block-end: var(--space-3xl);
   }
 </style>

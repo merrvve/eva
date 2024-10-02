@@ -6,12 +6,8 @@ import PostEdu from "../../components/PostEdu.astro";
 import Center from "../../components/Center.astro";
 import PageHeader from "../../components/PageHeader.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import config from '../../settings/site-config.json';
 
-const descriptions = await Astro.glob("../../content/descriptions/educationPage.md")
-const desc = descriptions.map(n => ({
-  title: n.frontmatter.title,
-  Content: n.Content
-}))
 
 const education = await getCollection("education");
 education.sort((a:any, b: any) => {
@@ -20,23 +16,19 @@ education.sort((a:any, b: any) => {
     : 1;
 });
 
-const title = "Education";
-const description = "Education description text";
+const title = config.educationPage.title;
+const description = config.educationPage.description;
 ---
 
 <BaseLayout title={title} description={description} includeFooter padBottom>
-  
+  <PageHeader
+  title={config.educationPage.title}
+  description={config.educationPage.description}
+  datePublished={new Date(config.educationPage.date)}
+/>
   <Center>
-    <div class=page-header>
-      <h1 class="page-title">{title}</h1>
-      <p class="page-subtitle">
-        {
-          descriptions.map(({  Content }) => (
-              <Content />
-           ))
-        }
-      </p>
-    </div>
+    
+    
     <section>
       {
         education.map((res: any) => (
