@@ -11,7 +11,7 @@ dateModified: 2024-06-15
 
 **Associazione per la Voce e il Corpo** (*Association for Voice and Body*) is a non-profit organization founded in Bologna in 2024 that operates in the field of education and cultural production. The Association oversees the Center's activities from an administrative point of view.
 
-The Center's activities are open to both members and non-members of the Association. However, we warmly invite you to consider [**joining**](/join). Students and teachers participating in our programs are required to become members.
+The Center's activities are open to both members and non-members of the Association. However, we warmly invite you to consider [**joining**](https://form.jotform.com/242873242217354). Students and teachers participating in our programs are required to become members.
 
 ## Current Board
 - [Francesco Venturi](/people#francesco-venturi), President
@@ -24,7 +24,7 @@ We believe in open communication and accountability to our members, donors, and 
 
 ## How to join:
 
-You can apply for membership to the Association through this page: [**JOIN US**](/join).
+You can apply for membership to the Association through this page: [**JOIN US**](https://form.jotform.com/242873242217354).
 
 Membership expires on December 31st of each year (regardless of the registration date). The membership card costs **€15**, in support of the Association's activities.
 
