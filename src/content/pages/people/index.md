@@ -12,7 +12,7 @@ An overview of the center's voices.
 <br />
 
 ##### Agnese Banti
-Agnese, Delia Banti she/her. Sound artist, musician and overtone singer, originally from a valley of northern Tuscany and roomer in different places of the Mediterranean area, she is actually based in Bologna, working with sound in music, performances, installations and audiovisuals.
+Sound artist, musician and overtone singer, originally from a valley of northern Tuscany and roomer in different places of the Mediterranean area, she is actually based in Bologna, working with sound in music, performances, installations and audiovisuals.
 
 With a colourful path of studies (in humanities, design and communication, electronic music and sound design) and a multidirectional interest in sound and music, her activity has always been gravitating around many points of attraction: such as choral music, soundscape studies, traditional folk music repertoires, space composition and the collaborative dimension of making music. One of the things that fascinated her the most in recent years is the research made around a sound installation project on frog voices and ancient ruins that she realised between the Electronic Music School of Bologna and the Ionian University of Corfu for her master’s degree.
 
@@ -112,19 +112,17 @@ In the 2022 Wonderland Festival, he curated a dramaturgy workshop and the stagin
 <br />
 
 ##### Francesco Venturi
-Francesco Venturi is the director and founding member of CRIV. A musician, researcher, and curator, he is a PhS candidate at Kingston University London, with a study on voice education.
+Francesco Venturi is the director and founding member of CRIV. Musician, voice artist, and researcher, he is a PhD candidate at Kingston University London, with a study on voice education and the access question. For the past decade, he has developed voice-based projects within and without the live arts, collaborating with institutions internationally and intersectionally.
 
-For the past decade, he has developed interdisciplinary voice-based projects in the live arts, collaborating with institutions internationally and intersectionally, working with the voices of hundreds of people of all ages.
+His interests encompass the relationship between voice and identity, opera studies, extended vocal techniques, critical musicology, music curation, somatics, transformability, and radical pedagogies. 
 
-As a composer, Venturi has created music for cinema, live arts, and visual arts, including award-winning soundtracks such as that of Stonebreakers by Valerio Ciriaci, as well as productions by artists such as Rimini Protokoll. He has also created "Donizetti On" for the Teatro Donizetti in Bergamo (2021-2023) and "ZAAZ" for the Teatro Nazionale in Milan.
+A spokesperson for the emerging field of Voice Studies, Venturi has been conducting courses, workshops, and seminars at universities and institutions Europe-wide, including Milan Conservatory, Goldsmiths University in London, Festival della Scienza in Genova, and Refuge Worldwide in Berlin. He published research in academic journals and authored the book "Creak: Theories and Practices of Pulse Phonation" (2024), the first monography dedicated to vocal fry. He served as an educational coordinator at the Teatro Donizetti in Bergamo and at Milano Musica in Milan and worked as a teacher trainer for projects such as Opera Domani.
 
-He has been performing since age nine, initially as a percussionist and later as a singer. He currently alternates between opera singing and radical experimentation, and has collaborated with ensembles like OperaLombardia choir and LaVerdi choir. He was the vocalist of duo Interlingua. He has lent his voice to films, artworks, podcasts, video games, and interdisciplinary projects. He recently presented his last vocal performance "Urvoice" at Hangar Bicocca in Milan. 
+Very active as a concert organizer, he created the Microstagione festival in 2012 (Milan) and co-founded the venue Spettro in 2018 (Brescia). He is also a member of the editorial board of TURBA: The Journal for Global Practices in Live Arts Curation, since its foundation.
 
-A spokesperson for Voice Studies, Venturi has been conducting seminars and workshops at universities and institutions Europe-wide, including Milan Conservatory, Goldsmiths University in London, and Refuge Worldwide in Berlin. He was invited to chair conferences and talks and has served as an educational coordinator at the Teatro Donizetti in Bergamo and at Milano Musica in Milan.
+Venturi has been performing since age nine, initially as a percussionist and later as a singer. Currently, he alternates between opera singing and radical experimentation, and has collaborated with choirs like OperaLombardia, LaVerdi, and LaBarocca. He has lent his voice to award-winning films, artworks, podcasts, and one video game, and was the vocalist of duo Interlingua. He recently presented his last vocal performance "Urvoice" at Hangar Bicocca in Milan. As a composer, Venturi has created music for cinema, theatre, dance, and visual arts, including award-winning soundtracks such as that of "Stonebreakers" by Valerio Ciriaci, as well as productions by artists such as Rimini Protokoll. He has also created the shows "Donizetti On" for the Teatro Donizetti in Bergamo (2021-2023) and "ZAAZ" for the Teatro Nazionale in Milan.
 
-He published research in academic journals and authored the book "Creak: Theories and Practices of Pulse Phonation" (2024). Active as a concert organizer, he created the Microstagione festival in 2012 and co-founded the venue Spettro in 2018. He is also a member of the editorial board of TURBA: The Journal for Global Practices in Live Arts Curation.
-
-Venturi holds degrees in composition from the Milan Conservatory, graphics from the Brera Academy, and musicology from Goldsmiths University, and was an artist in residence at the Antonio Ratti Foundation, Spinola-Banna Foundation, and Casa degli Artisti. He studied singing and voice with Guillermo Bussolini, Margaret Pikes, and Ermanna Montanari.
+He holds degrees in composition from the Milan Conservatory, graphics from the Brera Academy, and musicology from Goldsmiths University, and was an artist in residence at the Antonio Ratti Foundation, Spinola-Banna Foundation, and Casa degli Artisti. He studied singing and voice with Guillermo Bussolini, Margaret Pikes, and Ermanna Montanari.
 <br />
 <br />
 
