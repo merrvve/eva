@@ -1,13 +1,13 @@
 ---
 title: People
-description: This ever-expanding page showcases everyone and everything involved with the center's activities, including collaborators, team members, and affiliated projects, all arranged alphabetically.
+description: This ever-expanding page showcases everyone and everything involved with the center's activities, including collaborators, team members, and affiliated projects.
 datePublished: 2024-09-15
 dateModified: 2024-10-20
 ---
 
 ## Artists, Researchers, Teachers, and Team
 
-An overview of the center's voices.
+An overview of the center's voices, arranged alphabetically.
 <br />
 <br />
 
