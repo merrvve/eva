@@ -1,5 +1,5 @@
 ---
-title: Inaugurazione
+title: OPENING
 programme: Soirée
 timeline:
   start: "16 novembre 2024 18:00"
@@ -9,4 +9,4 @@ img:
     alt: Image description
 ---
 
-A marathon of happenings featuring Agnese Banti, Meike Clarelli, Alice Norma Lombardi, Eugenia Marzi, and Francesco Venturi to celebrate the inauguration of the Center.
+A marathon of happenings and live performances featuring Nicol Bana, Agnese Banti, Meike Clarelli, Alice Norma Lombardi, Eugenia Marzi, and Francesco Venturi to celebrate the inauguration of the Center.
