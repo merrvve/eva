@@ -9,4 +9,4 @@ img:
     alt: Image description
 ---
 
-A marathon of happenings and live performances featuring Nicol Bana, Agnese Banti, Meike Clarelli, Alice Norma Lombardi, Eugenia Marzi, and Francesco Venturi to celebrate the inauguration of the Center.
+Per celebrare l'inaugurazione del Centro, una maratona di happening e performance estemporanee con le voci e i suoni di Nicol Bana, Agnese Banti, Meike Clarelli, Alice Norma Lombardi, Eugenia Marzi e Francesco Venturi. L'evento segnerà il debutto dell'impianto multicanale creato su misura per il CRIV, offrendo l'opportunità di esplorare il nuovo spazio e di conoscere le future attività del Centro.
