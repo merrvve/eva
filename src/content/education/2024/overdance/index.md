@@ -7,7 +7,3 @@ teacher:
   - name: Daniele Chieppa
     url: /people/#daniele-chieppa
 ---
-
-## Dai 3 ai 5 anni
-
-Lunedì 11.00-12.00
