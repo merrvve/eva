@@ -40,9 +40,7 @@ His works have been presented in events such as La Biennale di Venezia (IT), Gla
 ##### Daniele Chieppa
 Performer, choreographer, dancemaker. Student of Performing Arts at the University of Bologna, he studied acting and contemporary dance; now he is working for theatrical productions as a performer and collaborates in the creation of performances and video dance works with choreographers and visual artists.
 
-He is teaching dance for children, and he is also conducting dance theater workshops for adults.
-
-From 2023, he is Dance Well teacher, sharing dance practices for people with Parkinson’s.
+He is teaching dance for children, and he is also conducting dance theater workshops for adults. From 2023, he is Dance Well teacher, sharing dance practices for people with Parkinson’s.
 
 He has been assistant of “Officine di Creazione” dance company, led by Paola Palmi.
 
@@ -102,8 +100,7 @@ He graduated in Philosophy with a thesis in English Language and Literature from
 As an actor, he has worked with numerous theater companies on prose repertoire, musicals, operettas, and contemporary music. His monologue Schifo/Dreck, directed by Gianfranco Rimondi, was chosen for the reopening of Teatro Magnolfi Nuovo in Prato.
 He specialized in directing with renowned professionals and completed the Advanced Training and Specialization Course in Opera Directing. He designed several series of performances and festivals, and adapted and directed multimedia projects and theatrical versions of novels.
 
-As a dramaturg, he collaborates with choreographer Carla Vannucchi on solo and international danceability projects. He debuted in immersive theater projects and shows on social themes.
-Since 2014, he has collaborated with Istituzione Bologna Musei and the network of European historical cemeteries ASCE for site-specific projects. He has overseen the artistic direction of intercultural festivals and festivals for actresses and authors.
+As a dramaturg, he collaborates with choreographer Carla Vannucchi on solo and international danceability projects. He debuted in immersive theater projects and shows on social themes. Since 2014, he has collaborated with Istituzione Bologna Musei and the network of European historical cemeteries ASCE for site-specific projects. He has overseen the artistic direction of intercultural festivals and festivals for actresses and authors.
 
 He teaches acting and stage techniques for various performers and collaborates with educational institutions on communication and accessibility projects. He completed a Master of Multimedia Translation and training courses in Audiotranslation, and he collaborates as an audio describer for theater accessibility.
 
@@ -112,17 +109,19 @@ In the 2022 Wonderland Festival, he curated a dramaturgy workshop and the stagin
 <br />
 
 ##### Francesco Venturi
-Francesco Venturi is the director and founding member of CRIV. Musician, voice artist, and researcher, he is a PhD candidate at Kingston University London, with a study on voice education and the access question. For the past decade, he has developed voice-based projects within and without the live arts, collaborating with institutions internationally and intersectionally.
+Francesco Venturi is the director and founding member of CRIV. Musician, voice artist, and researcher, he is a PhD candidate at Kingston University London, with a study on voice education and the access question.
 
-His interests encompass the relationship between voice and identity, opera studies, extended vocal techniques, critical musicology, music curation, somatics, transformability, and radical pedagogies. 
+For the past decade, he has developed voice-based projects within and without the live arts, collaborating with institutions internationally and intersectionally. His interests encompass the relationship between voice and gender, opera, extended vocal techniques, critical musicology, music curation, somatics, transformability, and radical pedagogies. 
 
-A spokesperson for the emerging field of Voice Studies, Venturi has been conducting courses, workshops, and seminars at universities and institutions Europe-wide, including Milan Conservatory, Goldsmiths University in London, Festival della Scienza in Genova, and Refuge Worldwide in Berlin. He published research in academic journals and authored the book "Creak: Theories and Practices of Pulse Phonation" (2024), the first monography dedicated to vocal fry. He served as an educational coordinator at the Teatro Donizetti in Bergamo and at Milano Musica in Milan and worked as a teacher trainer for projects such as Opera Domani.
+A spokesperson for the emerging field of voice studies, Venturi has been leading educational projects across Europe, including at the Milan Conservatory, Goldsmiths University, Festival della Scienza, and Refuge Worldwide Berlin. He worked as educational curator at Teatro Donizetti in Bergamo and Festival Milano Musica, and worked as a teacher trainer for projects such as OperaDomani. He published research in academic journals and edited the book "Creak: Theories and Practices of Pulse Phonation" (2024), the first monography dedicated to vocal fry.
 
-Very active as a concert organizer, he created the Microstagione festival in 2012 (Milan) and co-founded the venue Spettro in 2018 (Brescia). He is also a member of the editorial board of TURBA: The Journal for Global Practices in Live Arts Curation, since its foundation.
+An active concert organizer, he created the Microstagione festival in Milan (2012) and co-founded the venue Spettro in Brescia (2018). He is also on the editorial board of "TURBA: The Journal for Global Practices in Live Arts Curation".
 
-Venturi has been performing since age nine, initially as a percussionist and later as a singer. Currently, he alternates between opera singing and radical experimentation, and has collaborated with choirs like OperaLombardia, LaVerdi, and LaBarocca. He has lent his voice to award-winning films, artworks, podcasts, and one video game, and was the vocalist of duo Interlingua. He recently presented his last vocal performance "Urvoice" at Hangar Bicocca in Milan. As a composer, Venturi has created music for cinema, theatre, dance, and visual arts, including award-winning soundtracks such as that of "Stonebreakers" by Valerio Ciriaci, as well as productions by artists such as Rimini Protokoll. He has also created the shows "Donizetti On" for the Teatro Donizetti in Bergamo (2021-2023) and "ZAAZ" for the Teatro Nazionale in Milan.
+Venturi has performed since age nine. He alternates between opera and experimental singing, and has collaborated with choirs like OperaLombardia and LaVerdi. He has lent his voice to films, artworks, podcasts, and one video game, and was the vocalist of duo Interlingua. In 2023, he presented his vocal performance "Urvoice" at Hangar Bicocca in Milan.
 
-He holds degrees in composition from the Milan Conservatory, graphics from the Brera Academy, and musicology from Goldsmiths University, and was an artist in residence at the Antonio Ratti Foundation, Spinola-Banna Foundation, and Casa degli Artisti. He studied singing and voice with Guillermo Bussolini, Margaret Pikes, and Ermanna Montanari.
+As a composer, Venturi has created music for cinema, live and visual arts, including award-winning soundtracks like "Stonebreakers" by Valerio Ciriaci (USA 2022), as well as productions by artists like Rimini Protokoll. In 2021, he created the show "Donizetti On" for the reopening of Teatro Donizetti. His music has been presented in institutions such as Palais de Tokyo in Paris and Teatro Nazionale in Milan.
+
+He holds degrees in composition from the Milan Conservatory, graphics from the Brera Academy, and musicology from Goldsmiths University. He studied singing and voice with Guillermo Bussolini, Margaret Pikes, and Ermanna Montanari.
 <br />
 <br />
 
