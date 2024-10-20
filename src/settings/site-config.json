@@ -10,7 +10,7 @@
     },
     "concertsPage": {
         "title": "Concerts",
-        "description": "Concerts Description",
+        "description": "CRIV bridges international and local scenes through our Soirées (Fridays) and Matinées (Sundays) live programs.",
         "ogImage": "../images/criv-opening-2.gif",
         "ogAlt": "Centro di Ricerca Interdisciplinare sulla Voce (CRIV)",
         "date": "2024"
@@ -18,14 +18,14 @@
     
     "educationPage": {
         "title": "Education",
-        "description": "Education Description",
+        "description": "CRIV offers vocal and movement courses at all levels, blending traditional and experimental approaches.",
         "ogImage": "../images/criv-opening-2.gif",
         "ogAlt": "Centro di Ricerca Interdisciplinare sulla Voce (CRIV)",
         "date": "2024"
     },
     "researchPage": {
         "title": "Research",
-        "description": "Research Description",
+        "description": "CRIV conducts research at the junction of voice studies, somatics, and sound, facilitating collaboration and dissemination",
         "ogImage": "../images/criv-opening-2.gif",
         "ogAlt": "Centro di Ricerca Interdisciplinare sulla Voce (CRIV)",
         "date": "2024"
