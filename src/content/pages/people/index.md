@@ -1,6 +1,6 @@
 ---
 title: People
-description: Here you will find everyone and everything involved with the center's activities, separated into collaborators, team members, and affiliated projects, all listed in alphabetical order.
+description: This ever-expanding page showcases everyone and everything involved with the center's activities, including collaborators, team members, and affiliated projects, all arranged alphabetically.
 datePublished: 2024-09-15
 dateModified: 2024-06-15
 ---
