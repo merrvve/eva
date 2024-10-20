@@ -1,54 +1,56 @@
 ---
 title: People
-description: People Page Description
+description: Here you will find everyone and everything involved with the center's activities, separated into collaborators, team members, and affiliated projects, all listed in alphabetical order.
 datePublished: 2024-09-15
 dateModified: 2024-06-15
 ---
 
-## Description
+## Artists and Researchers
 
-
-This is Description Text.
-<br />
-<br />
-[linkname](https://www.example.com) 
-text
-
-## Artists
-
-This is Artists Description Text.
+An overview of the center's voices.
 <br />
 <br />
 
-##### This is an artist name
+##### Jacopo Cenni
 
-##### [This is another artist name](https://fdffw)
+##### Alice Norma Lombardi
+
+##### Eugenia Marzi
+
+##### Nicol Bana
+
+##### Emanuela Sforza
 
 
 
-## Researchers
 
-This is Researchers Text.
+## Teachers and Team
+
+An overview of the center's educators and staff.
 <br />
 <br />
 
-##### This is a researcher name
+##### Francesco Venturi
 
-##### This is another researcher name
+##### Sara Giordani
 
-##### One more researcher
+##### Francesca Siracusa
 
-## Teachers
+##### Meike Clarelli
 
-This is Teachers Text.
+##### Giuditta de Concini
+
+##### Daniele Chieppa
+
+##### Alessandro Tampieri
+
+##### Agnese Banti
+
+
+## Institutions and Projects
+
+Here you'll find our partnering institutions and associated projects.
 <br />
 <br />
 
-##### This is a teacher name
-
-##### This is another teacher name
-
-
-## More If Needed
-
-text
+##### Associazione Mirmica
