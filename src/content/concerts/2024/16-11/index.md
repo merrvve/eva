@@ -5,7 +5,7 @@ timeline:
   start: "24-11-16 18:00"
   end: "24-11-16 22:00"
 img:
-  - src: .OPENING-02.jpg
+  - src: ./OPENING-02.jpg
     alt: Image description
 ---
 
