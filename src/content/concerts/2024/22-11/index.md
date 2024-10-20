@@ -9,4 +9,4 @@ img:
     alt: Jacopo Cenni
 ---
 
-Compositore e performer, la relazione con la tecnologia è un punto cruciale della sua attività artistica. Attraverso tecniche di Computer Music e Computer-Aided Composition, Cenni crea costrutti sonori organici e immersivi. La sua ricerca sulla dimensione gestuale nella pratica del live electronics è culminata nell’opera di teatro sonoro HUNT, che ha debuttato a Biennale Musica 2022. Più recentemente, si interessa  alla relazione tra coreografia e musica, ricerca da cui fioriscono i lavori in programma.
+Compositore e performer, la relazione con la tecnologia è un punto cruciale della sua attività artistica. Attraverso tecniche di Computer Music e Computer-Aided Composition, [Jacopo Cenni](/people/#jacopo-cenni) crea costrutti sonori organici e immersivi. La sua ricerca sulla dimensione gestuale nella pratica del live electronics è culminata nell’opera di teatro sonoro HUNT, che ha debuttato a Biennale Musica 2022. Più recentemente, si interessa  alla relazione tra coreografia e musica, ricerca da cui fioriscono i lavori in programma.
