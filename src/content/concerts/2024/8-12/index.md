@@ -3,6 +3,7 @@ title: Alice Norma Lombardi & Eugenia Marzi
 programme: Matinéé
 timeline:
   start: "2024-12-08"
+  end: "2024-12-08"
 img:
   - src: ./Ago24_AV_2595.jpg
     alt: Image description
