@@ -2,10 +2,10 @@
 title: Inaugurazione
 programme: Soirée
 timeline:
-  start: "16 novembre 18.00"
-  end: "22.00"
+  start: "24-11-16 18:00"
+  end: "24-11-16 22:00"
 img:
-  - src: .opening.jpg
+  - src: .OPENING-02.jpg
     alt: Image description
 ---
 
