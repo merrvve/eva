@@ -9,4 +9,4 @@ img:
     alt: Image description
 ---
 
-Per celebrare l'inaugurazione del Centro, una maratona di happening e performance estemporanee con le voci e i suoni di Nicol Bana, Agnese Banti, Meike Clarelli, Alice Norma Lombardi, Eugenia Marzi e Francesco Venturi. L'evento segnerà il debutto dell'impianto multicanale creato su misura per il CRIV, offrendo l'opportunità di esplorare il nuovo spazio e di conoscere le future attività del Centro.
+Per celebrare l'inaugurazione del Centro, una maratona di performance estemporanee con le voci e i suoni di Nicol Bana, Agnese Banti, Meike Clarelli, Alice Norma Lombardi, Eugenia Marzi e Francesco Venturi. Oltre ad offrire l'opportunità di esplorare il nuovo spazio e di conoscere le future attività del Centro in un clima festivo, l'evento segna il debutto dell'impianto multicanale creato su misura per il CRIV.
