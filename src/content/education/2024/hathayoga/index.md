@@ -2,7 +2,7 @@
 title: Hatha Yoga con Sara Giordani
 description: multilivello, dolce, dinamico
 datePublished: 2023-02-10 12:00:00-04:00
-url: /education/2024/terzavoce
+url: /education/2024/hathayoga
 teacher:
   - name: Sara Giordani
     url: /people/#sara-giordani
