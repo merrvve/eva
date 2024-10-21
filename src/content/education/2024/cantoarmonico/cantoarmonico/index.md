@@ -2,7 +2,6 @@
 title: Pratiche di canto armonico
 description: con Agnese Banti
 datePublished: 2024-10-01
-programme: Soirée
 timeline:
   start: "2024"
   end: "2025"
