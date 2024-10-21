@@ -1,10 +1,14 @@
 ---
-title: Pratiche di canto armonico collettive
-description: Helping BetaNYC map and query New York City's various civic boundaries.
-datePublished: 2024-02-13 01:53:27-04:00
-dateModified: 2024-05-15 02:17:43-04:00
-ogImage: ./UOAEI.png
+title: OPENING
+programme: Soirée
+timeline:
+  start: "2024"
+  end: "2025"
+img:
+  - src: ./UOAEI.png
+    alt: Image description
 ---
+
 
 <ProjectInfo
   collaborators={[
