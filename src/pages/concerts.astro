@@ -6,6 +6,7 @@ import ProjectPreview from "../components/ProjectPreview.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import config from '../settings/site-config.json';
 import PageHeader from "src/components/PageHeader.astro";
+import { Icon } from "src/components/Icon/Icon";
 const concerts = await getCollection("concerts");
 
 // Sort by year subdirectory
@@ -22,31 +23,30 @@ concerts.sort((a: any, b: any) =>
   includeFooter
 >
   <Center>
-    <!-- <section class="home">
-      <h1 class="visuallyhidden">CRIV</h1>
-      <div class="intro">
-        <p>
-          <strong>Concerts Page</strong> with description 
-        </p>
-      </div>
+    <section>
       
-      <div class="continue">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          width="40px"
-          fill="currentColor"
-          ><path
-            d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"
-          ></path></svg
-        >
+<h1 itemprop="name" class="page-title">
+  {config.concertsPage.title}
+</h1>
+{config.concertsPage.description && <p class="page-subtitle">{config.concertsPage.description}</p>}
+{
+  config.concertsPage.date && (
+    <div class="date">
+      <div class="icon">
+        <Icon icon="seedling" size="20" />
       </div>
-    </section> -->
-    <PageHeader
-  title={config.concertsPage.title}
-  description={config.concertsPage.description}
-  datePublished={new Date(config.concertsPage.date)}
-/>
+      <span>
+        Planted {config.concertsPage.date}
+        
+      </span>
+    </div>
+  )
+}
+      
+      
+      
+    </section>
+    <!--  -->
     <section class="work">
       {concerts.map((project: any) => <ProjectPreview project={project} />)}
     </section>
@@ -73,7 +73,32 @@ concerts.sort((a: any, b: any) =>
     gap: var(--space-3xl);
     min-height: calc(100svh - var(--space-3xl) * 1.8);
   }
+  .page-title {
+    padding-block-start: var(--space-2xl);
+    line-height: var(--line-height-display);
+  }
 
+  .page-subtitle {
+    font-size: var(--step-2);
+    line-height: var(--line-height-tight);
+    padding-block-start: var(--space-xs);
+  }
+
+  .date {
+    display: flex;
+    align-items: baseline;
+    column-gap: var(--space-2xs);
+    margin-block-start: var(--space-m);
+    font-size: var(--step--1);
+  }
+
+  .icon {
+    align-self: center;
+  }
+
+  .tended {
+    color: var(--gray-11);
+  }
   .continue {
     display: flex;
     justify-content: center;

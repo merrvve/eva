@@ -1,94 +1,104 @@
 ---
 import { getCollection } from "astro:content";
 import dayjs from "dayjs";
-import { RelativeDate } from "../components/RelativeDate/RelativeDate";
 import ProseLayout from "../layouts/ProseLayout.astro";
 
 const events = await getCollection("now");
 events.sort((a, b) => {
-  return dayjs(b.data.date).isBefore(dayjs(a.data.date)) ? -1 : 1;
+  return dayjs(b.data.startDate).isBefore(dayjs(a.data.startDate)) ? -1 : 1;
 });
+const today = new Date();
+let upcomingCount = 0;
+events.map((event)=> { 
+  if(event.data.startDate>today){
+    event.data.status = "upcoming";
+    upcomingCount +=1;
+  }
+  else {
+    event.data.status = "ongoing"
+  }
+})
 
+const ongoingCount = events.length - upcomingCount;
+
+let index = 0;
 const title = "Now";
 const description = "What’s up to?";
 ---
 
 <ProseLayout title={title} description={description}>
-  <h4>Upcoming</h4>
-  <ul class="events">
-    {
-      events.map(async (event,index) => {
-        const { Content } = await event.render();
-        if(index===0) {
-          return (
-          <li class="event">
-            <div class="dot" aria-hidden />
-            <span class="heading">
-              <RelativeDate date={event.data.date} client:load />
-            </span>
-            <div class="line" aria-hidden />
-            <div class="content">
-              <Content />
-            </div>
-          </li>
-          );
-        } 
-        else if(index===1) {
-          return(
-          <li class="event">
-            <div class="dot" aria-hidden />
-            <span class="heading">
-              <RelativeDate date={event.data.date} client:load />
-            </span>
-            <div class="content">
-              <Content />
-            </div>
-          </li>
-          );
-        }
-        
-      })
-    }
-    
-  </ul>
-  <h4>Ongoing</h4>
-  <ul class="events">
-    {
-      events.map(async (event, index) => {
-        const { Content } = await event.render();
-
-        if(index!==events.length-1) {
-          return (
-          <li class="event">
-            <div class="dot" aria-hidden />
-            <span class="heading">
-              <RelativeDate date={event.data.date} client:load />
-            </span>
-            <div class="line" aria-hidden />
-            <div class="content">
-              <Content />
-            </div>
-          </li>
-          );
-        } 
-        else {
-          return(
-          <li class="event">
-            <div class="dot" aria-hidden />
-            <span class="heading">
-              <RelativeDate date={event.data.date} client:load />
-            </span>
-            <div class="content">
-              <Content />
-            </div>
-          </li>
-          );
-        }
-        
-      })
-    }
-    
-  </ul>
+  { upcomingCount>0 && <h4>Upcoming</h4>
+    <ul class="events">
+      {
+        events.map(async (event) => {
+          if (event.data.status==="upcoming") {
+            const { Content } = await event.render();
+  
+            index += 1;
+            return (
+              <li class="event">
+                <div class="dot" aria-hidden />
+                <span class="heading">
+                  {event.data.startDate.toLocaleDateString()}{" "}
+                  {event.data.endDate
+                    ? " - " + event.data.endDate?.toLocaleDateString()
+                    : ""}
+                </span>
+                {index == 1 ? <div class="line" aria-hidden /> : " "}
+  
+                <div class="content">
+                  <Content />
+                </div>
+              </li>
+            );
+          }
+        })
+      }
+    </ul>}
+  
+  { ongoingCount>0 && <h4>Ongoing</h4>
+    <ul class="events">
+      {
+        events.map(async (event, index) => {
+          if (event.data.startDate < today) {
+            const { Content } = await event.render();
+            if (index !== events.length - 1) {
+              return (
+                <li class="event">
+                  <div class="dot" aria-hidden />
+                  <span class="heading">
+                    {event.data.startDate.toLocaleDateString()}{" "}
+                  {event.data.endDate
+                    ? " - " + event.data.endDate?.toLocaleDateString()
+                    : ""}
+                  </span>
+                  <div class="line" aria-hidden />
+                  <div class="content">
+                    <Content />
+                  </div>
+                </li>
+              );
+            } else {
+              return (
+                <li class="event">
+                  <div class="dot" aria-hidden />
+                  <span class="heading">
+                    {event.data.startDate.toLocaleDateString()}{" "}
+                  {event.data.endDate
+                    ? " - " + event.data.endDate?.toLocaleDateString()
+                    : ""}
+                  </span>
+                  <div class="content">
+                    <Content />
+                  </div>
+                </li>
+              );
+            }
+          }
+        })
+      }
+    </ul>}
+  
   <style lang="scss">
     .events {
       list-style: none;

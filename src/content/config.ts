@@ -54,7 +54,7 @@ export const collections = {
         title: z.string(),
         timeline: z.object({
           start: z.string(),
-          end: z.string(),
+          end: z.string().optional(),
         }),
         programme: z.string(),
         img: z
@@ -122,7 +122,9 @@ export const collections = {
     type: "content",
     schema: () =>
       z.object({
-        date: z.date(),
+        startDate: z.date(),
+        endDate: z.date().optional(),
+        status: z.string().optional()
       }),
   }),
 };

@@ -39,7 +39,7 @@ const { Content } = await render();
     ))
   }
   <div class="sticky">
-    <time>{timeline.start}&ndash;{timeline.end}</time>
+    <time>{timeline.start} {timeline?.end ? " - " +timeline.end : ""}</time>
     <h2>{title}</h2>
     <Content />
     {
